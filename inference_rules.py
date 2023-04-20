@@ -215,6 +215,17 @@ def apply_inverse_mul(expr):
             return Number(1)
     return expr
 
+# Methods to apply Propositoinal Inference Rules
+
+# Modus ponens
+def apply_modus_ponens(premises, conclusion):
+    for premise in premises:
+        if isinstance(premise, BinaryOp) and premise.op == Connective.IMPLIES:
+            antecedent = premise.left
+            consequent = premise.right
+            if antecedent in premises and consequent == conclusion:
+                return True
+    return False
 
 
 #print(modus_ponens)  # Output: Modus Ponens: A, (A → B) ⊢ B

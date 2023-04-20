@@ -1,4 +1,3 @@
-import unittest
 from inference_rules import *
 
 def test_print_message(expr1, expr2):
