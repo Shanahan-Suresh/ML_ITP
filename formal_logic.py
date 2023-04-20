@@ -19,6 +19,7 @@ class Connective(Enum):
     MUL = auto()
     DIV = auto()
     EQ = auto()
+    NEG = auto()
 
 #dictionary for mapping symbols
 CONNECTIVE_SYMBOLS = {
@@ -32,7 +33,8 @@ CONNECTIVE_SYMBOLS = {
     Connective.SUB: "-",
     Connective.MUL: "*",
     Connective.DIV: "/",
-    Connective.EQ: "="
+    Connective.EQ: "=",
+    Connective.NEG: "-"
 }
 
 
@@ -53,7 +55,6 @@ class Variable(Expression):
             return False
         return self.name == other.name
 
-
 class Number(Expression):
     def __init__(self, value):
         self.value = value
@@ -65,6 +66,17 @@ class Number(Expression):
         if not isinstance(other, Number):
             return False
         return self.value == other.value
+
+class Fraction(Expression):
+    def __init__(self, numerator, denominator):
+        self.numerator = numerator
+        self.denominator = denominator
+
+    def __str__(self):
+        return f"({self.numerator}/{self.denominator})"
+
+    def __eq__(self, other):
+        return isinstance(other, Fraction) and self.numerator == other.numerator and self.denominator == other.denominator
 
 class NumericalVariable(Expression):
     def __init__(self, name):
@@ -99,20 +111,28 @@ class BinaryOp(Expression):
 
 class UnaryOp(Expression):
     # single operand and operator
-    def __init__(self, op, operand):
+    def __init__(self, op, expr):
         self.op = op
-        self.operand = operand
+        self.expr = expr
 
     def __repr__(self):
-        return f"({self.op.name} {self.operand})"
+        return f"({self.op.name} {self.expr})"
+
+    def __str__(self):
+        if self.op == Connective.NOT:
+            return f"({CONNECTIVE_SYMBOLS[self.op]}{self.expr})"
+        elif self.op == Connective.NEG:
+            return f"{self.op.value}{self.expr}"
+        else:
+            raise ValueError(f"Unsupported unary connective: {self.op}")
 
     def __eq__(self, other):
         if not isinstance(other, UnaryOp):
             return False
-        return self.op == other.op and self.operand == other.operand
+        return self.op == other.op and self.expr == other.expr
 
     def __repr__(self):
-        return f"({CONNECTIVE_SYMBOLS[self.op]}{self.operand})"
+        return f"({CONNECTIVE_SYMBOLS[self.op]}{self.expr})"
 
 
 # Helper functions - these functions are used to construct expressions
@@ -152,8 +172,11 @@ def Div(a, b):
 def Eq(a, b):
     return BinaryOp(a, Connective.EQ, b)
 
+def Neg(a):
+    return UnaryOp(Connective.NEG, a)
 
 
+'''
 # TEST SECTION
 
 A = Variable("A")
@@ -161,7 +184,7 @@ B = Variable("B")
 C = Variable("C")
 
 expr = Implies(And(A, B), Or(Not(A), C))
-#print(expr)  # Output: ((A AND B) IMPLIES ((NOT A) OR C))
+print(expr)  # Output: ((A AND B) IMPLIES ((NOT A) OR C))
 
 expr2 = Biconditional(A, B)
 #print(expr2)
@@ -174,3 +197,4 @@ equality = Eq(expr1, expr2)
 print(equality)  # Output: ((2 * (x + 7)) EQ (2 * (x + 7)))
 
 print(expr1 == expr2)
+'''
