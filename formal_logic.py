@@ -50,10 +50,14 @@ class Variable(Expression):
     def __repr__(self):
         return self.name
 
+    def __hash__(self):
+        return hash(self.name)
+
     def __eq__(self, other):
         if not isinstance(other, Variable):
             return False
         return self.name == other.name
+
 
 class Number(Expression):
     def __init__(self, value):
@@ -61,6 +65,9 @@ class Number(Expression):
 
     def __repr__(self):
         return str(self.value)
+
+    def __hash__(self):
+        return hash(self.value)
 
     def __eq__(self, other):
         if not isinstance(other, Number):
@@ -75,6 +82,9 @@ class Fraction(Expression):
     def __str__(self):
         return f"({self.numerator}/{self.denominator})"
 
+    def __hash__(self):
+        return hash((self.numerator, self.denominator))
+
     def __eq__(self, other):
         return isinstance(other, Fraction) and self.numerator == other.numerator and self.denominator == other.denominator
 
@@ -84,6 +94,9 @@ class NumericalVariable(Expression):
 
     def __repr__(self):
         return self.name
+
+    def __hash__(self):
+        return hash(self.name)
 
     def __eq__(self, other):
         if not isinstance(other, NumericalVariable):
@@ -104,6 +117,9 @@ class BinaryOp(Expression):
         if not isinstance(other, BinaryOp):
             return False
         return self.left == other.left and self.op == other.op and self.right == other.right
+
+    def __hash__(self):
+        return hash((self.left, self.op, self.right))
 
     def __repr__(self):
         return f"({self.left} {CONNECTIVE_SYMBOLS[self.op]} {self.right})"
@@ -130,6 +146,9 @@ class UnaryOp(Expression):
         if not isinstance(other, UnaryOp):
             return False
         return self.op == other.op and self.expr == other.expr
+
+    def __hash__(self):
+        return hash((self.op, self.expr))
 
     def __repr__(self):
         return f"({CONNECTIVE_SYMBOLS[self.op]}{self.expr})"
