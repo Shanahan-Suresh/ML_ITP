@@ -33,6 +33,18 @@ def test_hs():
 
     print(apply_hypothetical_syllogism(premises, conclusion))  # Output: True
 
+# Disjunctive Syllogism Test
+def test_ds():
+    a = Variable('a')
+    b = Variable('b')
+
+    expr1 = BinaryOp(a, Connective.OR, b)
+    expr2 = UnaryOp(Connective.NOT, a)
+
+    result = apply_disjunctive_syllogism(expr1, expr2)
+    print(result)  # Output: b
+
+
 # Additon Test
 def test_a():
     A = Variable("A")
@@ -72,9 +84,10 @@ def main():
     #test_mp()
     #test_mt()
     #test_hs()
+    test_ds()
     #test_a()
     #test_s()
-    test_r()
+    #test_r()
 
 
 main()

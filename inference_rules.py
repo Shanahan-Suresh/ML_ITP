@@ -254,6 +254,21 @@ def apply_hypothetical_syllogism(premises, conclusion):
                         return True
     return False
 
+# Disjunctive Syllogism
+def apply_disjunctive_syllogism(p1, p2):
+    if isinstance(p1, BinaryOp) and p1.op == Connective.OR:
+        if isinstance(p2, UnaryOp) and p2.op == Connective.NOT and p2.expr == p1.left:
+            return p1.right
+        elif isinstance(p2, UnaryOp) and p2.op == Connective.NOT and p2.expr == p1.right:
+            return p1.left
+    elif isinstance(p2, BinaryOp) and p2.op == Connective.OR:
+        if isinstance(p1, UnaryOp) and p1.op == Connective.NOT and p1.expr == p2.left:
+            return p2.right
+        elif isinstance(p1, UnaryOp) and p1.op == Connective.NOT and p1.expr == p2.right:
+            return p2.left
+    return None
+
+
 # Addition
 def apply_addition(premise, conclusion):
     if not isinstance(conclusion, BinaryOp) or conclusion.op != Connective.OR:
