@@ -227,6 +227,85 @@ def apply_modus_ponens(premises, conclusion):
                 return True
     return False
 
+# Modus tollens
+def apply_modus_tollens(premises, conclusion):
+    if not isinstance(conclusion, UnaryOp) or conclusion.op != Connective.NOT:
+        return False
+
+    negated_antecedent = conclusion.expr
+    for premise in premises:
+        if isinstance(premise, BinaryOp) and premise.op == Connective.IMPLIES:
+            antecedent = premise.left
+            consequent = premise.right
+            if antecedent == negated_antecedent and UnaryOp(Connective.NOT, consequent) in premises:
+                return True
+    return False
+
+# Hypothetical Syllogism
+def apply_hypothetical_syllogism(premises, conclusion):
+    if not isinstance(conclusion, BinaryOp) or conclusion.op != Connective.IMPLIES:
+        return False
+
+    for premise_1 in premises:
+        if (isinstance(premise_1, BinaryOp) and premise_1.op == Connective.IMPLIES):
+            for premise_2 in premises:
+                if (isinstance(premise_2, BinaryOp) and premise_2.op == Connective.IMPLIES):
+                    if premise_1.right == premise_2.left and premise_1.left == conclusion.left and premise_2.right == conclusion.right:
+                        return True
+    return False
+
+# Addition
+def apply_addition(premise, conclusion):
+    if not isinstance(conclusion, BinaryOp) or conclusion.op != Connective.OR:
+        return False
+
+    return premise == conclusion.left or premise == conclusion.right
+
+# Simplification
+def apply_simplification(premise, conclusion):
+    if not isinstance(premise, BinaryOp) or premise.op != Connective.AND:
+        return False
+
+    return conclusion == premise.left or conclusion == premise.right
+
+# Resolution - NOT WORKING
+def apply_resolution(premise1, premise2, conclusion):
+    def find_complement(p1, p2):
+        if isinstance(p1, UnaryOp) and p1.op == Connective.NEG and p1.expr == p2:
+            return True
+        if isinstance(p2, UnaryOp) and p2.op == Connective.NEG and p2.expr == p1:
+            return True
+        return False
+
+    if not (isinstance(premise1, BinaryOp) and isinstance(premise2, BinaryOp) and isinstance(conclusion, BinaryOp)):
+        return False
+
+    if premise1.op != Connective.OR or premise2.op != Connective.OR or conclusion.op != Connective.OR:
+        return False
+
+    found_complement = False
+    remaining_literals = []
+
+    for p1 in [premise1.left, premise1.right]:
+        print(p1)
+        for p2 in [premise2.left, premise2.right]:
+            print(p2)
+            if find_complement(p1, p2):
+                found_complement = True
+            else:
+                remaining_literals.append((p1, p2))
+                print(remaining_literals)
+
+    if not found_complement:
+        return False
+
+    for literal_pair in remaining_literals:
+        if conclusion == Or(*literal_pair):
+            return True
+
+    return False
+
+
 
 #print(modus_ponens)  # Output: Modus Ponens: A, (A → B) ⊢ B
 #print(modus_tollens)  # Output: Modus Tollens: (¬B), (A → B) ⊢ (¬A)
