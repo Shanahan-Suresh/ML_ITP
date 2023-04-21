@@ -117,21 +117,27 @@ inverse_mul = InferenceRule(
 # Methods to apply inference rules
 
 # Associativity Add
-def apply_associativity_add(expr):
+def apply_associativity_add(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.ADD:
         if isinstance(expr.left, BinaryOp) and expr.left.op == Connective.ADD:
             # Left-associative to right-associative
             a = expr.left.left
             b = expr.left.right
             c = expr.right
-            return BinaryOp(a, Connective.ADD, BinaryOp(b, Connective.ADD, c))
+            new_expr = BinaryOp(a, Connective.ADD, BinaryOp(b, Connective.ADD, c))
+            return new_expr
         elif isinstance(expr.right, BinaryOp) and expr.right.op == Connective.ADD:
             # Right-associative to left-associative
             a = expr.left
             b = expr.right.left
             c = expr.right.right
-            return BinaryOp(BinaryOp(a, Connective.ADD, b), Connective.ADD, c)
-    return expr
+            new_expr = BinaryOp(BinaryOp(a, Connective.ADD, b), Connective.ADD, c)
+            return new_expr
+    return None
+
+apply_associativity_add.single_premise = True
+
 
 # Associativity Mul
 def apply_associativity_mul(expr):
@@ -218,41 +224,30 @@ def apply_inverse_mul(expr):
 # Methods to apply Propositoinal Inference Rules
 
 # Modus ponens
-def apply_modus_ponens(premises, conclusion):
-    for premise in premises:
-        if isinstance(premise, BinaryOp) and premise.op == Connective.IMPLIES:
-            antecedent = premise.left
-            consequent = premise.right
-            if antecedent in premises and consequent == conclusion:
-                return True
-    return False
+def apply_modus_ponens(premise1, premise2):
+    if isinstance(premise1, BinaryOp) and premise1.op == Connective.IMPLIES:
+        antecedent = premise1.left
+        consequent = premise1.right
+        if antecedent == premise2:
+            return consequent
+    return None
 
 # Modus tollens
-def apply_modus_tollens(premises, conclusion):
-    if not isinstance(conclusion, UnaryOp) or conclusion.op != Connective.NOT:
-        return False
-
-    negated_antecedent = conclusion.expr
-    for premise in premises:
-        if isinstance(premise, BinaryOp) and premise.op == Connective.IMPLIES:
-            antecedent = premise.left
-            consequent = premise.right
-            if antecedent == negated_antecedent and UnaryOp(Connective.NOT, consequent) in premises:
-                return True
-    return False
+def apply_modus_tollens(premise1, premise2):
+    if isinstance(premise1, BinaryOp) and premise1.op == Connective.IMPLIES:
+        antecedent = premise1.left
+        consequent = premise1.right
+        if isinstance(premise2, UnaryOp) and premise2.op == Connective.NOT and premise2.expr == consequent:
+            return UnaryOp(Connective.NOT, antecedent)
+    return None
 
 # Hypothetical Syllogism
-def apply_hypothetical_syllogism(premises, conclusion):
-    if not isinstance(conclusion, BinaryOp) or conclusion.op != Connective.IMPLIES:
-        return False
-
-    for premise_1 in premises:
-        if (isinstance(premise_1, BinaryOp) and premise_1.op == Connective.IMPLIES):
-            for premise_2 in premises:
-                if (isinstance(premise_2, BinaryOp) and premise_2.op == Connective.IMPLIES):
-                    if premise_1.right == premise_2.left and premise_1.left == conclusion.left and premise_2.right == conclusion.right:
-                        return True
-    return False
+def apply_hypothetical_syllogism(premise1, premise2):
+    if (isinstance(premise1, BinaryOp) and premise1.op == Connective.IMPLIES and
+        isinstance(premise2, BinaryOp) and premise2.op == Connective.IMPLIES):
+        if premise1.right == premise2.left:
+            return BinaryOp(premise1.left, Connective.IMPLIES, premise2.right)
+    return None
 
 # Disjunctive Syllogism
 def apply_disjunctive_syllogism(p1, p2):
@@ -270,18 +265,20 @@ def apply_disjunctive_syllogism(p1, p2):
 
 
 # Addition
-def apply_addition(premise, conclusion):
-    if not isinstance(conclusion, BinaryOp) or conclusion.op != Connective.OR:
-        return False
-
-    return premise == conclusion.left or premise == conclusion.right
+def apply_addition(premise1, premise2):
+    if isinstance(premise1, BinaryOp) and premise1.op == Connective.OR:
+        return premise1
+    elif isinstance(premise2, BinaryOp) and premise2.op == Connective.OR:
+        return premise2
+    return None
 
 # Simplification
-def apply_simplification(premise, conclusion):
-    if not isinstance(premise, BinaryOp) or premise.op != Connective.AND:
-        return False
-
-    return conclusion == premise.left or conclusion == premise.right
+def apply_simplification(premise1, premise2):
+    if isinstance(premise1, BinaryOp) and premise1.op == Connective.AND:
+        return premise1.left if premise2 == premise1.right else premise1.right
+    elif isinstance(premise2, BinaryOp) and premise2.op == Connective.AND:
+        return premise2.left if premise1 == premise2.right else premise2.right
+    return None
 
 # Resolution - NOT WORKING
 def apply_resolution(premise1, premise2, conclusion):

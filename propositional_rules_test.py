@@ -3,24 +3,38 @@ from inference_rules import *
 #Modus Ponens Test
 def test_mp():
 
+    # Define premises and conclusion
     A = Variable("A")
     B = Variable("B")
-
-    premises = [A, Implies(A, B)]
+    premise1 = BinaryOp(A, Connective.IMPLIES, B)
+    premise2 = A
     conclusion = B
 
-    print(apply_modus_ponens(premises, conclusion))  # Output: True
+    # Apply modus ponens rule
+    result = apply_modus_ponens(premise1, premise2)
+
+    # Check if the rule application yielded the desired conclusion
+    if result == conclusion:
+        print("The modus ponens rule was applied successfully!")
+    else:
+        print("The modus ponens rule could not be applied.")
+
 
 # Modus Tollens Test
 def test_mt():
 
     A = Variable("A")
     B = Variable("B")
-
-    premises = [UnaryOp(Connective.NOT, B), Implies(A, B)]
+    premise1 = BinaryOp(A, Connective.IMPLIES, B)
+    premise2 = UnaryOp(Connective.NOT, B)
     conclusion = UnaryOp(Connective.NOT, A)
 
-    print(apply_modus_tollens(premises, conclusion))  # Output: True
+    result = apply_modus_tollens(premise1, premise2)
+
+    if result == conclusion:
+        print("The modus tollens rule was applied successfully!")
+    else:
+        print("The modus tollens rule could not be applied.")
 
 # Hypothetical Syllogism Test
 def test_hs():
@@ -28,10 +42,16 @@ def test_hs():
     B = Variable("B")
     C = Variable("C")
 
-    premises = [Implies(A, B), Implies(B, C)]
-    conclusion = Implies(A, C)
+    premise1 = BinaryOp(A, Connective.IMPLIES, B)
+    premise2 = BinaryOp(B, Connective.IMPLIES, C)
+    conclusion = BinaryOp(A, Connective.IMPLIES, C)
 
-    print(apply_hypothetical_syllogism(premises, conclusion))  # Output: True
+    result = apply_hypothetical_syllogism(premise1, premise2)
+
+    if result == conclusion:
+        print("The hypothetical syllogism rule was applied successfully!")
+    else:
+        print("The hypothetical syllogism rule could not be applied.")
 
 # Disjunctive Syllogism Test
 def test_ds():
@@ -49,11 +69,18 @@ def test_ds():
 def test_a():
     A = Variable("A")
     B = Variable("B")
+    C = Variable("C")
 
-    premise = A
-    conclusion = Or(A, B)
+    # Test cases for apply_addition
+    premise1 = A
+    premise2 = BinaryOp(A, Connective.OR, B)
+    result = apply_addition(premise1, premise2)
+    assert result == premise2, "Test case 1 for apply_addition failed"
 
-    print(apply_addition(premise, conclusion))  # Output: True
+    premise1 = B
+    premise2 = BinaryOp(A, Connective.OR, B)
+    result = apply_addition(premise1, premise2)
+    assert result == premise2, "Test case 2 for apply_addition failed"
 
 
 # Simplification Test
@@ -61,10 +88,16 @@ def test_s():
     A = Variable("A")
     B = Variable("B")
 
-    premise = And(A, B)
-    conclusion = A
+    # Test cases for apply_simplification
+    premise1 = BinaryOp(A, Connective.AND, B)
+    premise2 = A
+    result = apply_simplification(premise1, premise2)
+    assert result == B, "Test case 1 for apply_simplification failed"
 
-    print(apply_simplification(premise, conclusion))  # Output: True
+    premise1 = BinaryOp(A, Connective.AND, B)
+    premise2 = B
+    result = apply_simplification(premise1, premise2)
+    assert result == A, "Test case 2 for apply_simplification failed"
 
 
 # Resolution Test - NOT WORKING
@@ -84,8 +117,8 @@ def main():
     #test_mp()
     #test_mt()
     #test_hs()
-    test_ds()
-    #test_a()
+    #test_ds()
+    test_a()
     #test_s()
     #test_r()
 
