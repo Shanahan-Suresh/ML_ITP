@@ -140,86 +140,117 @@ apply_associativity_add.single_premise = True
 
 
 # Associativity Mul
-def apply_associativity_mul(expr):
+def apply_associativity_mul(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.MUL:
         if isinstance(expr.left, BinaryOp) and expr.left.op == Connective.MUL:
             # Left-associative to right-associative
             a = expr.left.left
             b = expr.left.right
             c = expr.right
-            return BinaryOp(a, Connective.MUL, BinaryOp(b, Connective.MUL, c))
+            new_expr = BinaryOp(a, Connective.MUL, BinaryOp(b, Connective.MUL, c))
+            return new_expr
         elif isinstance(expr.right, BinaryOp) and expr.right.op == Connective.MUL:
             # Right-associative to left-associative
             a = expr.left
             b = expr.right.left
             c = expr.right.right
-            return BinaryOp(BinaryOp(a, Connective.MUL, b), Connective.MUL, c)
-    return expr
+            new_expr = BinaryOp(BinaryOp(a, Connective.MUL, b), Connective.MUL, c)
+            return new_expr
+    return None
+
+apply_associativity_mul.single_premise = True
 
 # Commutative Add
-def apply_commutativity_add(expr):
+def apply_commutativity_add(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.ADD:
-        return BinaryOp(expr.right, Connective.ADD, expr.left)
-    return expr
+        new_expr = BinaryOp(expr.right, Connective.ADD, expr.left)
+        return new_expr
+    return None
+
+apply_commutativity_add.single_premise = True
 
 # Commutative Mul
-def apply_commutativity_mul(expr):
+def apply_commutativity_mul(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.MUL:
-        return BinaryOp(expr.right, Connective.MUL, expr.left)
-    return expr
+        new_expr = BinaryOp(expr.right, Connective.MUL, expr.left)
+        return new_expr
+    return None
+
+apply_commutativity_mul.single_premise = True
 
 # Distributivity
-def apply_distributivity(expr):
+def apply_distributivity(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.MUL:
         if isinstance(expr.right, BinaryOp) and expr.right.op == Connective.ADD:
             # Distribute left multiplication
             a = expr.left
             b = expr.right.left
             c = expr.right.right
-            return Add(Mul(a, b), Mul(a, c))
+            new_expr = BinaryOp(BinaryOp(a, Connective.MUL, b), Connective.ADD, BinaryOp(a, Connective.MUL, c))
+            return new_expr
         elif isinstance(expr.left, BinaryOp) and expr.left.op == Connective.ADD:
             # Distribute right multiplication
             a = expr.left.left
             b = expr.left.right
             c = expr.right
-            return Add(Mul(a, c), Mul(b, c))
-    return expr
+            new_expr = BinaryOp(BinaryOp(a, Connective.MUL, c), Connective.ADD, BinaryOp(b, Connective.MUL, c))
+            return new_expr
+    return None
+
+apply_distributivity.single_premise = True
 
 # Identity Add
-def apply_identity_add(expr):
+def apply_identity_add(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.ADD:
         if isinstance(expr.left, Number) and expr.left.value == 0:
             return expr.right
         elif isinstance(expr.right, Number) and expr.right.value == 0:
             return expr.left
-    return expr
+    return None
+
+apply_identity_add.single_premise = True
 
 # Identity Mul
-def apply_identity_mul(expr):
+def apply_identity_mul(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.MUL:
         if isinstance(expr.left, Number) and expr.left.value == 1:
             return expr.right
         elif isinstance(expr.right, Number) and expr.right.value == 1:
             return expr.left
-    return expr
+    return None
+
+apply_identity_mul.single_premise = True
+
 
 # Inverse Add
-def apply_inverse_add(expr):
+def apply_inverse_add(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.ADD:
         if isinstance(expr.left, UnaryOp) and expr.left.op == Connective.NEG and expr.left.expr == expr.right:
             return Number(0)
         elif isinstance(expr.right, UnaryOp) and expr.right.op == Connective.NEG and expr.right.expr == expr.left:
             return Number(0)
-    return expr
+    return None
+
+apply_inverse_add.single_premise = True
 
 # Inverse Mul
-def apply_inverse_mul(expr):
+def apply_inverse_mul(premise):
+    expr = premise
     if isinstance(expr, BinaryOp) and expr.op == Connective.MUL:
         if isinstance(expr.left, Fraction) and expr.left.denominator == expr.right:
             return Number(1)
         elif isinstance(expr.right, Fraction) and expr.right.denominator == expr.left:
             return Number(1)
-    return expr
+    return None
+
+apply_inverse_mul.single_premise = True
 
 # Methods to apply Propositoinal Inference Rules
 
