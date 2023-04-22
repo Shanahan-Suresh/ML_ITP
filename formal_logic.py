@@ -138,7 +138,7 @@ class UnaryOp(Expression):
         if self.op == Connective.NOT:
             return f"({CONNECTIVE_SYMBOLS[self.op]}{self.expr})"
         elif self.op == Connective.NEG:
-            return f"{self.op.value}{self.expr}"
+            return f"({CONNECTIVE_SYMBOLS[self.op]}{self.expr})"
         else:
             raise ValueError(f"Unsupported unary connective: {self.op}")
 
