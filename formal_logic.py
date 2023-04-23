@@ -1,6 +1,7 @@
 ﻿
 from abc import abstractmethod
 from enum import Enum, auto
+from bidict import bidict
 
 ## Abstract language syntex
 class Connective(Enum):
@@ -22,7 +23,7 @@ class Connective(Enum):
     NEG = auto()
 
 #dictionary for mapping symbols
-CONNECTIVE_SYMBOLS = {
+CONNECTIVE_SYMBOLS = bidict({
     Connective.AND: "∧",
     Connective.OR: "∨",
     Connective.NOT: "¬",
@@ -30,12 +31,12 @@ CONNECTIVE_SYMBOLS = {
     Connective.BICONDITIONAL: "↔",
     Connective.XOR: "⊕",
     Connective.ADD: "+",
-    Connective.SUB: "-",
+    Connective.SUB: "−",
     Connective.MUL: "*",
     Connective.DIV: "/",
     Connective.EQ: "=",
     Connective.NEG: "-"
-}
+})
 
 
 class Expression:
