@@ -1,0 +1,1202 @@
+[
+  {
+    "premises": [
+      "(((¬K) ¬ (H ¬ (¬X))) ∨ ((X ∨ H) → (K ∨ (¬K))))",
+      "(((¬K) ∧ ((¬X) ∨ K)) ∧ ((¬K) → ((¬H) → K)))"
+    ],
+    "conclusion": "((¬K) → ((¬H) → K))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬W) → (¬U)) → (¬U)) ∧ ((¬U) → (V ∨ (¬W))))",
+      "((W ¬ (¬V)) ∨ ((U → (¬V)) ¬ ((¬W) ¬ W)))"
+    ],
+    "conclusion": "((¬U) → (V ∨ (¬W)))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬W) ∧ ((¬W) → ((¬A) ∨ W)))",
+      "(((H ¬ W) ∧ ((¬W) ¬ H)) ∨ (((¬A) ∧ A) ∨ ((¬A) ∨ (¬W))))"
+    ],
+    "conclusion": "(((H ¬ W) ∧ ((¬W) ¬ H)) ∨ (((¬A) ∧ A) ∨ ((¬A) ∨ (¬W))))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬O) ∧ ((¬O) → (O ∨ (¬W))))",
+      "(((O ¬ W) ∧ (O → O)) → (((¬W) → (¬O)) → (O ¬ (¬K))))"
+    ],
+    "conclusion": "(¬O)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(P → ((P ∧ P) ∧ (G ∨ P)))",
+      "(((G ∨ (¬A)) ¬ (G ∧ (¬G))) ∧ (((¬A) ∧ P) ∧ (P ¬ (¬P))))"
+    ],
+    "conclusion": "((¬A) ∧ P)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((L ∨ H) ∧ (H → D)) ∧ (¬D))",
+      "((¬L) ∨ (((¬L) ∧ L) ∧ (L ∧ (¬H))))"
+    ],
+    "conclusion": "(H → D)",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(K → (((¬E) ∨ (¬G)) ∨ ((¬K) ∧ (¬G))))",
+      "(((K ¬ K) ∧ (K → K)) ∧ ((E ∨ E) ∨ E))"
+    ],
+    "conclusion": "((K ¬ K) ∧ (K → K))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((I → (¬P)) ¬ P) ∧ (I → ((¬C) → I)))",
+      "I"
+    ],
+    "conclusion": "((¬C) → I)",
+    "applied_rules": [
+      "simplification",
+      "hypothetical_syllogism",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((T ¬ T) → Q) ∧ (((¬Q) ¬ (¬I)) ∨ Q))",
+      "(¬Q)"
+    ],
+    "conclusion": "(((¬Q) ¬ (¬I)) ∨ Q)",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((V → ((¬X) ∨ (¬X))) ∧ V)",
+      "(C → ((V ¬ C) ∧ ((¬C) ∨ (¬X))))"
+    ],
+    "conclusion": "(V → ((¬X) ∨ (¬X)))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬Y) → Y) ∧ (¬Y))",
+      "(((G ¬ (¬G)) → (G ¬ X)) ∧ ((Y ∧ Y) ¬ (G ∧ G)))"
+    ],
+    "conclusion": "(¬(¬Y))",
+    "applied_rules": [
+      "modus_tollens",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((O → Y) ∨ (O ∨ O)) ∧ ((¬Y) ∧ ((¬Y) → Y)))",
+      "(O ∨ ((Y ∧ (¬Y)) ¬ R))"
+    ],
+    "conclusion": "((¬Y) → Y)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬J)",
+      "((¬J) → ((F ∨ (¬J)) ∧ F))"
+    ],
+    "conclusion": "F",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬E) ∧ E) ∧ (¬C)) ∧ ((¬E) → (C → (¬E))))",
+      "(¬E)"
+    ],
+    "conclusion": "(C → (C → (¬E)))",
+    "applied_rules": [
+      "simplification",
+      "hypothetical_syllogism",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((E → (¬E)) → (E → Q)) ∧ ((¬A) ∧ ((¬A) → E)))",
+      "((((¬E) ∨ (¬Q)) ∧ (A ¬ Q)) ∨ ((A → A) → ((¬Q) ∧ E)))"
+    ],
+    "conclusion": "((¬A) ∧ ((¬A) → E))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((G ∨ Y) ∧ Y) ∧ G)",
+      "(G → (Y ∨ ((¬Y) → (¬G))))"
+    ],
+    "conclusion": "(Y ∨ ((¬Y) → (¬G)))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬I) → D) ∧ (¬I))",
+      "(D ∨ (¬D))"
+    ],
+    "conclusion": "((¬I) → D)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬Q) → ((O → R) ∨ ((¬O) ¬ (¬Q))))",
+      "((((¬R) → (¬O)) ∧ (Q → (¬O))) ∧ (¬Q))"
+    ],
+    "conclusion": "((O → R) ∨ ((¬O) ¬ (¬Q)))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((I ∨ L) ∨ ((¬I) ∧ H)) ∧ ((¬I) → H))",
+      "(((H ∨ L) ∨ ((¬L) → L)) → (¬I))"
+    ],
+    "conclusion": "(((H ∨ L) ∨ ((¬L) → L)) → H)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬T) ¬ (¬I)) ∧ ((¬I) ∨ T)) → (Q ¬ ((¬T) → T)))",
+      "((Q → (I ∨ (¬I))) ∧ Q)"
+    ],
+    "conclusion": "(I ∨ (¬I))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "C",
+      "(C → (((¬N) ¬ (¬D)) ∧ (N ∨ (¬N))))"
+    ],
+    "conclusion": "(N ∨ (¬N))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬A) ∨ (((¬A) ¬ N) → ((¬N) ∧ K)))",
+      "((((¬K) → A) ∧ (A → K)) ∧ (¬K))"
+    ],
+    "conclusion": "(((¬K) → A) ∧ (A → K))",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬E) → F) → (X ¬ F)) ∧ (((¬E) ∨ (¬E)) → ((¬E) → F)))",
+      "(E ∨ X)"
+    ],
+    "conclusion": "(((¬E) ∨ (¬E)) → (X ¬ F))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬L) ¬ G) → L) ∧ (¬L))",
+      "(L → (((¬G) ¬ G) ¬ (M ¬ (¬M))))"
+    ],
+    "conclusion": "(((¬L) ¬ G) → (((¬G) ¬ G) ¬ (M ¬ (¬M))))",
+    "applied_rules": [
+      "modus_tollens",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(A → (((¬A) ¬ Y) ∧ ((¬Y) ∨ F)))",
+      "A"
+    ],
+    "conclusion": "((¬Y) ∨ F)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬K) ∧ (J ∨ K))",
+      "((((¬K) ∧ (¬H)) → ((¬J) ¬ (¬H))) → K)"
+    ],
+    "conclusion": "(J ∨ K)",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((K ∧ (D → J)) ∧ D)",
+      "(((D ∨ (¬K)) → J) ∨ (¬D))"
+    ],
+    "conclusion": "D",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((B ∨ (¬J)) ∧ (G → G)) ∧ (((¬J) ¬ (¬G)) ∨ (¬G)))",
+      "(¬G)"
+    ],
+    "conclusion": "((B ∨ (¬J)) ∧ (G → G))",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((¬Z) ∧ ((J → Z) ∨ (Z → (¬J))))",
+      "((((¬J) → J) ∧ (J ∧ (¬J))) → Z)"
+    ],
+    "conclusion": "((J → Z) ∨ (Z → (¬J)))",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((Z ¬ (¬F)) → U) ∧ ((¬U) ∧ (U → U)))",
+      "(¬U)"
+    ],
+    "conclusion": "((Z ¬ (¬F)) → U)",
+    "applied_rules": [
+      "modus_tollens",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬D) ¬ (¬S)) ¬ ((¬Y) ¬ S)) ∧ (((¬S) → D) ∧ (¬D)))",
+      "(((Y ∨ (¬D)) → ((¬Y) ∧ (¬D))) ∨ ((S ¬ S) → S))"
+    ],
+    "conclusion": "(((¬S) → D) ∧ (¬D))",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((¬X) → ((X ∨ (¬X)) ∧ ((¬X) ¬ X)))",
+      "(((X ∧ L) ∨ ((¬L) → X)) ∧ (¬X))"
+    ],
+    "conclusion": "(¬X)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬B) ∧ (((¬A) ∨ (¬W)) ∨ (¬B)))",
+      "((¬B) → ((B ∨ (¬W)) → (A ∧ B)))"
+    ],
+    "conclusion": "(¬B)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(B ∨ (((¬H) → O) ∧ (O → H)))",
+      "(((¬H) → ((¬H) → H)) ∧ (¬H))"
+    ],
+    "conclusion": "(¬H)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬B)",
+      "((¬B) → (((¬Z) ∨ (¬B)) ∧ (¬I)))"
+    ],
+    "conclusion": "(((¬Z) ∨ (¬B)) ∧ (¬I))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬I) → (J ¬ (¬J))) ∧ ((E ∨ E) ∨ (J ∨ I)))",
+      "(I → (¬I))"
+    ],
+    "conclusion": "((¬I) → (J ¬ (¬J)))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬D) → I) ∨ (D ∨ (¬D))) ∧ ((D → (¬I)) → O))",
+      "(¬O)"
+    ],
+    "conclusion": "((D → (¬I)) → O)",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((Q → ((¬U) ¬ U)) ∧ ((Z ¬ Z) ∧ ((¬Z) ∨ (¬Z))))",
+      "(((Q ¬ Z) → (U ∨ (¬Q))) → Q)"
+    ],
+    "conclusion": "(((Q ¬ Z) → (U ∨ (¬Q))) → ((¬U) ¬ U))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬X) ∧ (¬W)) → ((¬X) ¬ W)) ∨ (((¬W) ¬ A) → ((¬A) → (¬W))))",
+      "(((A ∧ X) ∧ (X → W)) ∧ X)"
+    ],
+    "conclusion": "((A ∧ X) ∧ (X → W))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬J)",
+      "((¬J) → ((S ∨ (¬F)) ∧ (F → (¬J))))"
+    ],
+    "conclusion": "((S ∨ (¬F)) ∧ (F → (¬J)))",
+    "applied_rules": [
+      "simplification",
+      "hypothetical_syllogism",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬T) ¬ (¬Z)) ¬ ((¬Z) ¬ K)) ∨ (T ∨ (K ∧ (¬T))))",
+      "((K → (K ∧ (¬Z))) ∧ K)"
+    ],
+    "conclusion": "((((¬T) ¬ (¬Z)) ¬ ((¬Z) ¬ K)) ∨ (T ∨ (K ∧ (¬T))))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬X) → (M ∨ (¬X))) ∧ ((R ¬ (¬X)) ∨ (¬M)))",
+      "(¬X)"
+    ],
+    "conclusion": "(M ∨ (¬X))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(X → (A ∨ (A ∨ (¬X))))",
+      "(P ∧ ((A ∧ (¬P)) ∧ X))"
+    ],
+    "conclusion": "(A ∨ (A ∨ (¬X)))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬J) → (((¬I) ∧ I) ∨ (I ¬ I)))",
+      "((¬J) ∧ (¬T))"
+    ],
+    "conclusion": "(((¬I) ∧ I) ∨ (I ¬ I))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(J ∧ (J → (Y → (¬Y))))",
+      "(Y ∨ ((¬U) → (¬Y)))"
+    ],
+    "conclusion": "(Y ∨ ((¬U) → (¬Y)))",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "H",
+      "((((¬Z) ∧ H) ¬ Z) ∧ ((H → Z) ∧ ((¬H) ∨ (¬K))))"
+    ],
+    "conclusion": "(H → Z)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "K",
+      "(K → ((K ∧ B) ∧ ((¬B) ∨ B)))"
+    ],
+    "conclusion": "K",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((L ∧ (¬M)) ¬ (C ¬ M)) ∨ (¬L))",
+      "(((C ∨ M) → C) ∧ (¬C))"
+    ],
+    "conclusion": "((C ∨ M) → C)",
+    "applied_rules": [
+      "modus_tollens",
+      "addition",
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((K → ((¬K) → (¬K))) ∧ K)",
+      "(N → (¬K))"
+    ],
+    "conclusion": "((¬K) → (¬K))",
+    "applied_rules": [
+      "simplification",
+      "hypothetical_syllogism",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((V ¬ (¬V)) ∧ ((¬X) ¬ V)) ∨ ((N ∧ V) ¬ ((¬X) ∧ (¬V))))",
+      "(((N → (¬X)) ∧ ((¬N) → N)) ∧ (¬V))"
+    ],
+    "conclusion": "(¬V)",
+    "applied_rules": [
+      "addition",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(S ∨ ((¬F) → ((¬H) ¬ S)))",
+      "((((¬F) ⊕ (¬S)) → H) ∧ (¬H))"
+    ],
+    "conclusion": "(¬((¬F) ⊕ (¬S)))",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬C) ⊕ V) ↔ (C ⊕ (¬C))) ∧ (Q → (Q ∨ C)))",
+      "Q"
+    ],
+    "conclusion": "(Q → (Q ∨ C))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((R ↔ (¬S)) → N) ∧ (R ∨ (N ¬ N)))",
+      "(¬N)"
+    ],
+    "conclusion": "(¬(R ↔ (¬S)))",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((H ¬ S) ∨ ((¬T) ∨ T)) ∧ ((¬H) → (¬S)))",
+      "((¬S) → (((¬T) ↔ H) ⊕ ((¬H) ∧ T)))"
+    ],
+    "conclusion": "((¬H) → (((¬T) ↔ H) ⊕ ((¬H) ∧ T)))",
+    "applied_rules": [
+      "simplification",
+      "addition",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((V → Y) ⊕ (W ⊕ V)) ∧ (¬W))",
+      "((¬W) → (((¬W) ∧ (¬Y)) ∨ (V → (¬Y))))"
+    ],
+    "conclusion": "(((¬W) ∧ (¬Y)) ∨ (V → (¬Y)))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((H → (P ↔ D)) ∧ H)",
+      "(((P ⊕ (¬D)) ∧ ((¬P) ∨ (¬H))) ∨ (((¬H) ↔ D) ↔ ((¬D) ∨ D)))"
+    ],
+    "conclusion": "(((P ⊕ (¬D)) ∧ ((¬P) ∨ (¬H))) ∨ (((¬H) ↔ D) ↔ ((¬D) ∨ D)))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬L) → (D ∧ (L ∨ L)))",
+      "(¬L)"
+    ],
+    "conclusion": "(D ∧ (L ∨ L))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((N → N) ∧ (N ∧ C)) ∧ (N → (M ∨ C)))",
+      "((((¬M) → (¬N)) ⊕ (M ∧ C)) → ((C ↔ (¬M)) ∧ (C → (¬N))))"
+    ],
+    "conclusion": "C",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "I",
+      "(((I ⊕ I) ⊕ (W ⊕ W)) ∧ (I → (S ∨ (¬I))))"
+    ],
+    "conclusion": "(S ∨ (¬I))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬X) → (S ∨ S)) ∧ (¬X))",
+      "((((¬X) ∨ (¬S)) ∧ (N ↔ X)) ⊕ ((¬X) ↔ S))"
+    ],
+    "conclusion": "(¬X)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬V) → (A → A)) ∧ (((¬E) → (¬E)) ∨ ((¬A) ↔ V)))",
+      "(¬V)"
+    ],
+    "conclusion": "(A → A)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(X ∧ ((¬O) ∧ (O ∨ F)))",
+      "((¬O) → ((X → O) ∧ (X ⊕ (¬X))))"
+    ],
+    "conclusion": "(O ∨ F)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬M) → ((M ⊕ (¬W)) ∨ (M ∨ M)))",
+      "(((M ⊕ W) ∨ ((¬M) ∧ (¬M))) ∧ (¬M))"
+    ],
+    "conclusion": "(¬M)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬O) ∧ P) → (P ⊕ Z)) ∨ (¬Z))",
+      "((O → (O ∨ Z)) ∧ O)"
+    ],
+    "conclusion": "((((¬O) ∧ P) → (P ⊕ Z)) ∨ (¬Z))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(¬V)",
+      "(((¬V) → ((¬M) ∨ V)) ∧ ((Z ↔ (¬V)) → (V ⊕ M)))"
+    ],
+    "conclusion": "((Z ↔ (¬V)) → (V ⊕ M))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(M ∧ ((F ¬ (¬M)) ∧ ((¬M) ∨ M)))",
+      "(M → ((X ⊕ (¬X)) ¬ (¬M)))"
+    ],
+    "conclusion": "((X ⊕ (¬X)) ¬ (¬M))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((R → L) ∧ ((¬R) ∨ L)) ∧ ((R ∨ (¬L)) ¬ ((¬R) ⊕ X)))",
+      "R"
+    ],
+    "conclusion": "L",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(T → (((¬E) ¬ (¬M)) ∨ (M ⊕ M)))",
+      "(T ∧ ((¬T) ∨ (¬E)))"
+    ],
+    "conclusion": "T",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(A ∨ (¬A))",
+      "(((A → (¬P)) ∨ ((¬A) → A)) ∧ ((A ∨ (¬A)) → ((¬Q) ⊕ A)))"
+    ],
+    "conclusion": "((A ∨ (¬A)) → ((¬Q) ⊕ A))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬S) ¬ (¬A)) ∧ (A ↔ R)) ∧ ((¬A) ∧ ((¬A) → A)))",
+      "(((R ∨ (¬S)) ∨ S) ¬ (((¬R) ∨ (¬A)) ¬ ((¬S) ∧ (¬A))))"
+    ],
+    "conclusion": "((¬A) → A)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬I) → ((¬P) ∨ P)) ∧ (((¬G) ¬ G) → ((¬I) ¬ (¬G))))",
+      "(¬I)"
+    ],
+    "conclusion": "(((¬G) ¬ G) → ((¬I) ¬ (¬G)))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬I) ∨ I) ∧ ((¬F) → I)) ∧ (¬F))",
+      "F"
+    ],
+    "conclusion": "((¬F) → I)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((N ⊕ ((¬I) ∧ I)) ∧ (¬N))",
+      "((¬N) → (((¬N) ∧ (¬J)) ∨ ((¬N) ⊕ I)))"
+    ],
+    "conclusion": "(¬N)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬I) ∧ (¬I)) ¬ ((¬K) ∨ Z)) ∨ I)",
+      "((((¬I) → (¬K)) ↔ (I ∧ (¬K))) ∧ (((¬I) → (¬K)) ∧ ((¬I) → (¬I))))"
+    ],
+    "conclusion": "((((¬I) ∧ (¬I)) ¬ ((¬K) ∨ Z)) ∨ I)",
+    "applied_rules": [
+      "simplification",
+      "addition",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "T",
+      "(T → (((¬Y) ¬ (¬V)) ∧ (V ∨ (¬Y))))"
+    ],
+    "conclusion": "(V ∨ (¬Y))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "D",
+      "((¬Z) ∧ ((¬Z) → (A → (¬Z))))"
+    ],
+    "conclusion": "(¬Z)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬R) ¬ (¬R)) ∨ (R ↔ (¬R))) → (H ⊕ (R → (¬R))))",
+      "((A → (R → A)) ∧ A)"
+    ],
+    "conclusion": "(R → A)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬K) → (((¬Z) → F) ⊕ (Z ↔ (¬F))))",
+      "(((K → (¬Z)) ∧ (F ∨ (¬F))) ∧ (Z → (¬K)))"
+    ],
+    "conclusion": "((K → (¬Z)) ∧ (F ∨ (¬F)))",
+    "applied_rules": [
+      "simplification",
+      "addition",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬Y) → ((¬F) ∨ (¬Y))) ∧ (¬Y))",
+      "(¬Y)"
+    ],
+    "conclusion": "((¬F) ∨ (¬Y))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬J) → S) ∧ ((¬S) → (¬J))) ∧ (((¬Z) → (¬S)) ∨ (S ∧ (¬Z))))",
+      "((S → ((¬Z) ∨ Z)) ⊕ ((S → (¬J)) ⊕ ((¬S) ∨ S)))"
+    ],
+    "conclusion": "(((¬J) → S) ∧ ((¬S) → (¬J)))",
+    "applied_rules": [
+      "simplification",
+      "addition",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(I → (((¬M) ⊕ (¬K)) ⊕ (M ↔ K)))",
+      "(((I ¬ M) ∨ ((¬I) ¬ I)) ∧ (((¬I) ∨ (¬M)) → I))"
+    ],
+    "conclusion": "(((¬I) ∨ (¬M)) → I)",
+    "applied_rules": [
+      "simplification",
+      "addition",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((Z ↔ (¬U)) ∧ ((¬Y) ⊕ Y)) ∧ ((¬Y) ∧ ((¬Y) → Y)))",
+      "(((U → Y) → (Y ¬ U)) → (¬Z))"
+    ],
+    "conclusion": "(¬Y)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(((Z ↔ (¬R)) ∧ (R ⊕ R)) ¬ (((¬R) ∧ (¬Z)) ¬ R))",
+      "(((X → Z) ∧ ((¬X) ∨ X)) ∧ (¬Z))"
+    ],
+    "conclusion": "((¬X) ∨ X)",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬R) → (((¬R) ∨ R) ∧ ((¬Q) ↔ (¬R))))",
+      "(¬R)"
+    ],
+    "conclusion": "(¬R)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((R ¬ (¬N)) ∨ ((¬N) ∨ N)) ∧ (¬E))",
+      "((((¬R) ∨ (¬N)) → ((¬R) → N)) → E)"
+    ],
+    "conclusion": "(¬(((¬R) ∨ (¬N)) → ((¬R) → N)))",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(C → C)",
+      "(((C ↔ (¬U)) ¬ ((¬B) → (¬B))) ∧ ((U → C) ∧ C))"
+    ],
+    "conclusion": "(U → C)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((A ⊕ E) ⊕ (A ⊕ A)) ∧ (¬A))",
+      "((¬A) → (A → (¬A)))"
+    ],
+    "conclusion": "(¬A)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬A) ∧ (((¬A) ∨ N) ∨ (J ∧ A)))",
+      "(((¬J) ∨ (¬J)) → A)"
+    ],
+    "conclusion": "(((¬A) ∨ N) ∨ (J ∧ A))",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((W ⊕ (¬U)) ∧ (W ⊕ (¬U))) ∨ ((Q → U) → (Q ¬ (¬U))))",
+      "(((U ↔ (¬U)) ∨ ((¬W) ↔ (¬W))) ∧ ((¬Q) ∧ (Q → Q)))"
+    ],
+    "conclusion": "(((W ⊕ (¬U)) ∧ (W ⊕ (¬U))) ∨ ((Q → U) → (Q ¬ (¬U))))",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬J) ∧ J)",
+      "(J → (((¬M) ∨ Z) ∨ (M ∧ Z)))"
+    ],
+    "conclusion": "(¬J)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((P → ((¬P) ∨ (¬X))) ∧ (((¬P) ∧ (¬C)) → ((¬P) ↔ C)))",
+      "P"
+    ],
+    "conclusion": "(((¬P) ∧ (¬C)) → ((¬P) ↔ C))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬E) → (¬E)) ∧ (¬E)) ∧ ((¬V) ⊕ (E → E)))",
+      "(((N ∧ V) ∧ (¬E)) ∨ ((V ↔ (¬E)) ¬ V))"
+    ],
+    "conclusion": "(((¬E) → (¬E)) ∧ (¬E))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬A) ∧ ((¬A) → ((¬R) ⊕ Y)))",
+      "(R ∨ (¬A))"
+    ],
+    "conclusion": "((¬R) ⊕ Y)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(B ∧ (((¬E) ¬ (¬B)) ⊕ B))",
+      "(B → (((¬B) ⊕ (¬B)) ∨ ((¬B) → E)))"
+    ],
+    "conclusion": "(((¬B) ⊕ (¬B)) ∨ ((¬B) → E))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(¬B)",
+      "(((Z ↔ E) ∨ ((¬B) ↔ E)) ∧ (Z → B))"
+    ],
+    "conclusion": "((Z ↔ E) ∨ ((¬B) ↔ E))",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "O",
+      "(O → ((O ¬ Z) ∧ (O ∨ (¬O))))"
+    ],
+    "conclusion": "(O ∨ (¬O))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((H → ((¬H) ↔ (¬H))) ∧ H)",
+      "((((¬H) ↔ (¬H)) ↔ (U ∧ H)) ∨ ((N ↔ (¬N)) ∧ ((¬N) ∨ (¬H))))"
+    ],
+    "conclusion": "((¬H) ↔ (¬H))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬M) ⊕ L) ∧ ((¬L) ∨ (¬M))) ∧ ((¬O) → (¬O)))",
+      "(¬O)"
+    ],
+    "conclusion": "((¬M) ⊕ L)",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬R) ∧ (¬X)) ∧ ((¬R) → M)) ∧ ((X ¬ (¬X)) ∨ (¬X)))",
+      "(¬M)"
+    ],
+    "conclusion": "((X ¬ (¬X)) ∨ (¬X))",
+    "applied_rules": [
+      "simplification",
+      "modus_tollens",
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬Z) → (M → (¬Z))) ∧ ((Z ⊕ I) ↔ ((¬Z) ∧ I)))",
+      "(¬Z)"
+    ],
+    "conclusion": "((¬Z) → (M → (¬Z)))",
+    "applied_rules": [
+      "modus_ponens",
+      "simplification",
+      "hypothetical_syllogism"
+    ]
+  }
+]

@@ -1,0 +1,1077 @@
+[
+  {
+    "premises": [
+      "(T ∨ ((M ∨ S) ∨ ((¬T) ¬ M)))",
+      "(S ¬ T)",
+      "(¬T)"
+    ],
+    "conclusion": "(T ∨ ((M ∨ S) ∨ ((¬T) ¬ M)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(X ∨ ((A ¬ (¬O)) ∨ (O ∨ X)))",
+      "((¬X) ∨ (¬O))",
+      "(¬X)"
+    ],
+    "conclusion": "((A ¬ (¬O)) ∨ (O ∨ X))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬K)",
+      "(K ∨ ((A ∨ A) ∨ ((¬F) ¬ (¬F))))",
+      "(((F ¬ (¬F)) ∨ ((¬F) ∨ (¬A))) ∨ (¬K))"
+    ],
+    "conclusion": "(K ∨ ((A ∨ A) ∨ ((¬F) ¬ (¬F))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(B ∨ ((B ¬ (¬F)) ¬ ((¬P) ∨ F)))",
+      "(¬B)"
+    ],
+    "conclusion": "((B ¬ (¬F)) ¬ ((¬P) ∨ F))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬A)",
+      "(((E ∨ (¬A)) ¬ ((¬A) ∨ P)) ¬ (((¬P) ∨ (¬A)) ¬ (A ¬ A)))",
+      "(A ∨ (((¬E) ¬ (¬P)) ¬ ((¬A) ¬ (¬A))))"
+    ],
+    "conclusion": "(A ∨ (((¬E) ¬ (¬P)) ¬ ((¬A) ¬ (¬A))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬G) ¬ (¬R)) ∨ R) ∨ (((¬G) ¬ (¬G)) ¬ G))",
+      "((((¬G) ¬ (¬D)) ¬ (¬R)) ∨ G)",
+      "(¬G)"
+    ],
+    "conclusion": "((((¬G) ¬ (¬D)) ¬ (¬R)) ∨ G)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬B)",
+      "(B ∨ (¬V))"
+    ],
+    "conclusion": "(B ∨ (¬V))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬X)",
+      "(X ∨ (((¬Y) ∨ H) ¬ X))",
+      "(((¬Y) ¬ (¬Y)) ¬ (((¬Y) ∨ (¬Y)) ∨ ((¬Y) ∨ H)))"
+    ],
+    "conclusion": "(((¬Y) ∨ H) ¬ X)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬J) ¬ J) ∨ ((¬S) ∨ O)) ∨ J)",
+      "(((O ∨ J) ¬ ((¬J) ∨ O)) ∨ (¬O))",
+      "(¬J)"
+    ],
+    "conclusion": "((((¬J) ¬ J) ∨ ((¬S) ∨ O)) ∨ J)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬W)",
+      "((((¬J) ¬ (¬J)) ¬ ((¬W) ¬ (¬W))) ∨ W)",
+      "(J ∨ J)"
+    ],
+    "conclusion": "(((¬J) ¬ (¬J)) ¬ ((¬W) ¬ (¬W)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(H ∨ ((W ¬ H) ¬ (G ¬ (¬G))))",
+      "(¬H)",
+      "(¬W)"
+    ],
+    "conclusion": "(H ∨ ((W ¬ H) ¬ (G ¬ (¬G))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(L ∨ ((L ¬ (¬L)) ∨ (V ∨ (¬V))))",
+      "(¬L)"
+    ],
+    "conclusion": "((L ¬ (¬L)) ∨ (V ∨ (¬V)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(J ∨ (((¬D) ¬ J) ¬ ((¬D) ∨ (¬B))))",
+      "(¬J)"
+    ],
+    "conclusion": "(J ∨ (((¬D) ¬ J) ¬ ((¬D) ∨ (¬B))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(E ∨ ((M ¬ (¬G)) ¬ (M ¬ (¬M))))",
+      "(G ∨ ((¬E) ∨ ((¬M) ∨ (¬M))))",
+      "(¬G)"
+    ],
+    "conclusion": "((¬E) ∨ ((¬M) ∨ (¬M)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(J ∨ ((L ¬ J) ∨ M))",
+      "(¬J)"
+    ],
+    "conclusion": "(J ∨ ((L ¬ J) ∨ M))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬I)",
+      "((¬X) ∨ I)"
+    ],
+    "conclusion": "((¬X) ∨ I)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬I) ∨ A)",
+      "(¬A)"
+    ],
+    "conclusion": "((¬I) ∨ A)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬X)",
+      "(((G ∨ G) ∨ ((¬G) ∨ J)) ¬ (¬X))",
+      "(((G ¬ (¬X)) ∨ ((¬X) ∨ J)) ∨ X)"
+    ],
+    "conclusion": "((G ¬ (¬X)) ∨ ((¬X) ∨ J))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(N ∨ (((¬C) ∨ (¬N)) ¬ (Z ¬ C)))",
+      "(¬N)",
+      "(((N ¬ Z) ∨ ((¬C) ∨ C)) ∨ (¬Z))"
+    ],
+    "conclusion": "(((N ¬ Z) ∨ ((¬C) ∨ C)) ∨ (¬Z))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬V)",
+      "(((G ∨ V) ∨ (G ¬ (¬V))) ¬ (¬F))",
+      "(V ∨ G)"
+    ],
+    "conclusion": "G",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬D)",
+      "(((D ¬ D) ¬ (¬D)) ∨ D)",
+      "((((¬D) ¬ D) ¬ A) ¬ (((¬D) ∨ (¬D)) ¬ ((¬A) ∨ T)))"
+    ],
+    "conclusion": "(((D ¬ D) ¬ (¬D)) ∨ D)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "((G ¬ ((¬O) ¬ G)) ¬ ((G ¬ (¬D)) ¬ ((¬G) ¬ (¬D))))",
+      "(O ∨ (¬D))"
+    ],
+    "conclusion": "(¬D)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬C) ∨ (((¬C) ¬ C) ¬ ((¬S) ∨ (¬S))))",
+      "(¬F)",
+      "(F ∨ (((¬S) ∨ S) ¬ (S ∨ S)))"
+    ],
+    "conclusion": "(F ∨ (((¬S) ∨ S) ¬ (S ∨ S)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬F)",
+      "(F ∨ ((V ∨ F) ¬ (¬F)))"
+    ],
+    "conclusion": "((V ∨ F) ¬ (¬F))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬Y)",
+      "(((Y ¬ (¬T)) ∨ (T ¬ X)) ∨ (((¬T) ∨ (¬Y)) ∨ (Y ∨ Y)))",
+      "(Y ∨ (((¬Y) ∨ Y) ¬ ((¬T) ¬ X)))"
+    ],
+    "conclusion": "(((¬Y) ∨ Y) ¬ ((¬T) ¬ X))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬C) ∨ C)",
+      "(¬C)"
+    ],
+    "conclusion": "(¬C)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬B)",
+      "(B ∨ ((T ¬ (¬C)) ¬ (T ∨ (¬T))))",
+      "((((¬B) ¬ (¬T)) ∨ ((¬C) ∨ B)) ∨ ((T ∨ (¬C)) ∨ (B ¬ B)))"
+    ],
+    "conclusion": "((((¬B) ¬ (¬T)) ∨ ((¬C) ∨ B)) ∨ ((T ∨ (¬C)) ∨ (B ¬ B)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬C) ∨ (¬U)) ∨ (C ∨ U)) ∨ (((¬C) ∨ (¬U)) ¬ (¬U)))",
+      "(¬U)",
+      "(U ∨ ((Z ¬ (¬U)) ∨ (U ∨ (¬Z))))"
+    ],
+    "conclusion": "((Z ¬ (¬U)) ∨ (U ∨ (¬Z)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬L) ∨ ((O ∨ (¬I)) ¬ (¬O)))",
+      "(((I ¬ (¬O)) ∨ ((¬O) ∨ (¬L))) ∨ O)",
+      "(¬O)"
+    ],
+    "conclusion": "((¬L) ∨ ((O ∨ (¬I)) ¬ (¬O)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(I ¬ (((¬B) ¬ (¬I)) ∨ (¬I)))",
+      "(¬I)",
+      "(I ∨ (M ¬ ((¬I) ¬ (¬I))))"
+    ],
+    "conclusion": "(I ∨ (M ¬ ((¬I) ¬ (¬I))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬S)",
+      "(((S ¬ (¬N)) ∨ J) ∨ (N ∨ ((¬N) ¬ (¬S))))",
+      "(S ∨ S)"
+    ],
+    "conclusion": "(S ∨ S)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(X ∨ ((¬P) ∨ ((¬P) ∨ (¬P))))",
+      "(((P ¬ S) ∨ (¬X)) ¬ ((P ¬ (¬S)) ¬ ((¬S) ¬ (¬S))))",
+      "(¬X)"
+    ],
+    "conclusion": "(X ∨ ((¬P) ∨ ((¬P) ∨ (¬P))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬D)",
+      "((I ¬ D) ∨ D)",
+      "((¬R) ∨ ((D ∨ R) ∨ ((¬I) ∨ I)))"
+    ],
+    "conclusion": "((¬R) ∨ ((D ∨ R) ∨ ((¬I) ∨ I)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "E",
+      "(¬Y)",
+      "(((E ¬ (¬A)) ∨ (E ∨ A)) ∨ Y)"
+    ],
+    "conclusion": "(((E ¬ (¬A)) ∨ (E ∨ A)) ∨ Y)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬V)",
+      "(((¬F) ¬ ((¬O) ¬ (¬V))) ¬ (((¬F) ¬ (¬O)) ¬ (V ∨ (¬V))))",
+      "(((¬O) ¬ (V ¬ V)) ∨ V)"
+    ],
+    "conclusion": "(((¬O) ¬ (V ¬ V)) ∨ V)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((I ¬ F) ∨ ((¬F) ∨ F)) ∨ (¬G))",
+      "(¬F)",
+      "(F ∨ ((¬G) ∨ ((¬F) ∨ G)))"
+    ],
+    "conclusion": "(((I ¬ F) ∨ ((¬F) ∨ F)) ∨ (¬G))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬Y)",
+      "((¬G) ∨ Y)",
+      "(((Y ∨ Q) ¬ (Y ¬ (¬Q))) ¬ ((Y ¬ (¬Q)) ¬ (G ∨ (¬G))))"
+    ],
+    "conclusion": "((¬G) ∨ Y)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "(O ∨ O)",
+      "(((¬H) ¬ ((¬Q) ∨ Q)) ∨ (((¬H) ¬ H) ∨ ((¬O) ¬ (¬H))))"
+    ],
+    "conclusion": "O",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬T)",
+      "(((¬V) ¬ (E ∨ E)) ∨ (((¬E) ¬ T) ¬ (T ∨ T)))",
+      "(T ∨ ((T ∨ E) ¬ (V ¬ (¬V))))"
+    ],
+    "conclusion": "(((¬V) ¬ (E ∨ E)) ∨ (((¬E) ¬ T) ¬ (T ∨ T)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(O ∨ (((¬O) ∨ (¬O)) ¬ ((¬Q) ¬ (¬Q))))",
+      "((((¬O) ¬ I) ∨ ((¬I) ∨ (¬I))) ∨ (((¬O) ¬ (¬I)) ¬ ((¬O) ∨ (¬Q))))",
+      "(¬O)"
+    ],
+    "conclusion": "(O ∨ (((¬O) ∨ (¬O)) ¬ ((¬Q) ¬ (¬Q))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(J ∨ (¬J))",
+      "(¬J)"
+    ],
+    "conclusion": "(J ∨ (¬J))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(H ∨ ((H ∨ (¬U)) ∨ ((¬U) ¬ U)))",
+      "(¬H)"
+    ],
+    "conclusion": "(H ∨ ((H ∨ (¬U)) ∨ ((¬U) ¬ U)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(I ∨ (((¬D) ∨ (¬I)) ¬ ((¬D) ¬ I)))",
+      "(¬I)"
+    ],
+    "conclusion": "(I ∨ (((¬D) ∨ (¬I)) ¬ ((¬D) ¬ I)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬K) ¬ ((C ¬ (¬C)) ∨ (K ¬ K)))",
+      "(¬C)",
+      "(C ∨ (¬C))"
+    ],
+    "conclusion": "(C ∨ (¬C))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(R ∨ (((¬M) ¬ M) ∨ V))",
+      "(¬R)",
+      "((((¬R) ¬ (¬R)) ¬ (M ∨ (¬V))) ¬ (((¬M) ¬ (¬V)) ¬ (¬M)))"
+    ],
+    "conclusion": "(R ∨ (((¬M) ¬ M) ∨ V))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬U) ¬ (U ¬ (¬E))) ∨ J)",
+      "(¬U)",
+      "(((J ¬ J) ¬ ((¬E) ¬ J)) ∨ U)"
+    ],
+    "conclusion": "((J ¬ J) ¬ ((¬E) ¬ J))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((V ∨ V) ∨ (¬V)) ∨ I)",
+      "(¬I)",
+      "(((¬I) ∨ ((¬C) ¬ (¬C))) ∨ (((¬V) ∨ (¬V)) ∨ ((¬V) ∨ (¬V))))"
+    ],
+    "conclusion": "(((¬I) ∨ ((¬C) ¬ (¬C))) ∨ (((¬V) ∨ (¬V)) ∨ ((¬V) ∨ (¬V))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(Q ∨ F)",
+      "(¬Q)"
+    ],
+    "conclusion": "F",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(Q ∨ ((Q ¬ O) ∨ (K ¬ K)))",
+      "(¬Q)",
+      "(((K ∨ (¬K)) ∨ ((¬K) ¬ (¬Q))) ∨ ((O ∨ (¬Q)) ¬ Q))"
+    ],
+    "conclusion": "(Q ∨ ((Q ¬ O) ∨ (K ¬ K)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬J) ∨ B) ∨ ((¬B) ¬ J)) ∨ ((B ∨ B) ∨ ((¬J) ¬ (¬J))))",
+      "(¬J)",
+      "(J ∨ ((¬Q) ∨ ((¬J) ¬ J)))"
+    ],
+    "conclusion": "(J ∨ ((¬Q) ∨ ((¬J) ¬ J)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((Z ¬ (¬D)) ¬ Z) ¬ ((D ∨ (¬D)) ∨ (Z ∨ Z)))",
+      "(D ∨ ((D ¬ (¬Z)) ¬ ((¬D) ¬ (¬D))))",
+      "(¬D)"
+    ],
+    "conclusion": "(D ∨ ((D ¬ (¬Z)) ¬ ((¬D) ¬ (¬D))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(I ∨ ((H ∨ H) ∨ ((¬I) ∨ H)))",
+      "(¬I)"
+    ],
+    "conclusion": "(I ∨ ((H ∨ H) ∨ ((¬I) ∨ H)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((U ¬ (U ∨ U)) ∨ (((¬U) ∨ (¬W)) ∨ U))",
+      "(¬U)",
+      "(((¬U) ∨ (U ¬ (¬W))) ∨ U)"
+    ],
+    "conclusion": "(((¬U) ∨ (U ¬ (¬W))) ∨ U)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "(O ∨ (¬O))",
+      "(O ¬ (((¬X) ∨ (¬X)) ∨ ((¬O) ∨ (¬X))))"
+    ],
+    "conclusion": "(O ∨ (¬O))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(G ∨ ((G ¬ (¬G)) ¬ (¬O)))",
+      "(((G ∨ O) ¬ ((¬O) ∨ G)) ¬ ((G ¬ O) ¬ (¬G)))",
+      "(¬G)"
+    ],
+    "conclusion": "(G ∨ ((G ¬ (¬G)) ¬ (¬O)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬T)",
+      "(T ∨ (((¬T) ¬ L) ¬ ((¬T) ¬ (¬T))))"
+    ],
+    "conclusion": "(T ∨ (((¬T) ¬ L) ¬ ((¬T) ¬ (¬T))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬B) ∨ D) ¬ (¬D)) ¬ ((D ∨ B) ∨ ((¬D) ¬ B)))",
+      "(¬B)",
+      "(B ∨ ((B ¬ (¬D)) ∨ (¬B)))"
+    ],
+    "conclusion": "((B ¬ (¬D)) ∨ (¬B))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(F ∨ ((P ¬ F) ¬ (F ¬ (¬F))))",
+      "(((P ¬ (¬P)) ∨ (P ∨ (¬F))) ¬ F)",
+      "(¬F)"
+    ],
+    "conclusion": "(F ∨ ((P ¬ F) ¬ (F ¬ (¬F))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬E)",
+      "(E ∨ ((F ∨ (¬E)) ¬ (E ¬ (¬F))))",
+      "((F ∨ (E ¬ (¬E))) ∨ (F ∨ ((¬F) ¬ (¬F))))"
+    ],
+    "conclusion": "(E ∨ ((F ∨ (¬E)) ¬ (E ¬ (¬F))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((I ¬ (¬E)) ∨ ((¬I) ∨ (E ¬ I)))",
+      "((E ∨ (E ¬ (¬I))) ∨ I)",
+      "(¬I)"
+    ],
+    "conclusion": "((I ¬ (¬E)) ∨ ((¬I) ∨ (E ¬ I)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬N)",
+      "((((¬E) ∨ E) ¬ (N ∨ (¬E))) ∨ N)"
+    ],
+    "conclusion": "(((¬E) ∨ E) ¬ (N ∨ (¬E)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬X)",
+      "((¬J) ∨ (((¬X) ∨ J) ∨ ((¬X) ∨ J)))",
+      "(X ∨ ((X ∨ (¬J)) ∨ (X ∨ (¬X))))"
+    ],
+    "conclusion": "(X ∨ ((X ∨ (¬J)) ∨ (X ∨ (¬X))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬A) ¬ (¬A)) ∨ (¬A)) ∨ N)",
+      "(¬N)"
+    ],
+    "conclusion": "((((¬A) ¬ (¬A)) ∨ (¬A)) ∨ N)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(I ∨ (((¬I) ∨ I) ¬ ((¬I) ¬ I)))",
+      "(¬I)"
+    ],
+    "conclusion": "(I ∨ (((¬I) ∨ I) ¬ ((¬I) ¬ I)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬E) ∨ E) ¬ ((¬R) ¬ R)) ¬ (((¬E) ∨ (¬E)) ¬ (E ¬ (¬E))))",
+      "(¬E)",
+      "((((¬R) ¬ E) ∨ ((¬R) ∨ R)) ∨ E)"
+    ],
+    "conclusion": "(((¬R) ¬ E) ∨ ((¬R) ∨ R))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬F)",
+      "(((K ∨ K) ¬ ((¬K) ¬ (¬K))) ∨ ((K ¬ (¬F)) ∨ ((¬F) ¬ F)))",
+      "((((¬K) ¬ F) ¬ (K ∨ K)) ∨ F)"
+    ],
+    "conclusion": "((((¬K) ¬ F) ¬ (K ∨ K)) ∨ F)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬U) ¬ (¬U)) ¬ ((¬O) ¬ (¬U))) ∨ O)",
+      "((O ¬ (U ¬ O)) ¬ ((U ∨ O) ∨ ((¬U) ∨ (¬U))))",
+      "(¬O)"
+    ],
+    "conclusion": "(((¬U) ¬ (¬U)) ¬ ((¬O) ¬ (¬U)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬Z) ¬ Z) ∨ (¬Z)) ∨ ((¬U) ∨ (¬U)))",
+      "(¬U)",
+      "(((Z ¬ (¬Z)) ∨ (U ¬ Z)) ∨ U)"
+    ],
+    "conclusion": "((((¬Z) ¬ Z) ∨ (¬Z)) ∨ ((¬U) ∨ (¬U)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬R)",
+      "(((¬R) ∨ (R ∨ R)) ∨ R)",
+      "((¬B) ∨ (R ¬ (R ∨ R)))"
+    ],
+    "conclusion": "(((¬R) ∨ (R ∨ R)) ∨ R)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((J ¬ (¬J)) ¬ (J ∨ (¬E))) ¬ (((¬E) ¬ (¬E)) ¬ (E ¬ E)))",
+      "(¬E)",
+      "(E ∨ (((¬E) ∨ J) ¬ (J ¬ J)))"
+    ],
+    "conclusion": "(((¬E) ∨ J) ¬ (J ¬ J))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬U)",
+      "(((¬U) ∨ ((¬U) ¬ P)) ∨ U)",
+      "((((¬U) ¬ P) ¬ (U ∨ P)) ∨ U)"
+    ],
+    "conclusion": "((¬U) ∨ ((¬U) ¬ P))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(N ∨ ((U ¬ N) ∨ (U ∨ N)))",
+      "(¬N)"
+    ],
+    "conclusion": "(N ∨ ((U ¬ N) ∨ (U ∨ N)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬J)",
+      "(J ∨ O)"
+    ],
+    "conclusion": "(J ∨ O)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(M ∨ ((¬M) ∨ M))",
+      "(¬M)"
+    ],
+    "conclusion": "((¬M) ∨ M)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(M ∨ (((¬M) ¬ M) ∨ M))",
+      "(¬M)",
+      "(¬M)"
+    ],
+    "conclusion": "(((¬M) ¬ M) ∨ M)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬B)",
+      "((((¬B) ∨ (¬J)) ¬ B) ∨ B)",
+      "J"
+    ],
+    "conclusion": "(((¬B) ∨ (¬J)) ¬ B)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬D)",
+      "((((¬D) ¬ L) ∨ (D ¬ (¬D))) ∨ D)",
+      "((((¬D) ¬ (¬D)) ∨ (D ∨ (¬L))) ∨ (((¬L) ∨ L) ∨ (D ∨ (¬D))))"
+    ],
+    "conclusion": "(((¬D) ¬ L) ∨ (D ¬ (¬D)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬C)",
+      "(C ∨ (D ¬ (¬C)))",
+      "((C ¬ (¬C)) ¬ (((¬C) ¬ D) ¬ (¬C)))"
+    ],
+    "conclusion": "(D ¬ (¬C))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬S)",
+      "((((¬S) ∨ (¬Q)) ∨ ((¬Q) ¬ (¬S))) ∨ Q)",
+      "(((Q ∨ (¬S)) ∨ Q) ∨ S)"
+    ],
+    "conclusion": "((Q ∨ (¬S)) ∨ Q)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬H)",
+      "(H ∨ (((¬P) ¬ H) ∨ ((¬P) ¬ (¬H))))"
+    ],
+    "conclusion": "(H ∨ (((¬P) ¬ H) ∨ ((¬P) ¬ (¬H))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "(O ∨ (R ¬ (O ∨ (¬O))))",
+      "((((¬O) ¬ (¬O)) ¬ ((¬O) ¬ (¬O))) ¬ (((¬O) ¬ (¬R)) ¬ (¬R)))"
+    ],
+    "conclusion": "(R ¬ (O ∨ (¬O)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬J) ∨ J)",
+      "((((¬J) ¬ (¬J)) ¬ (O ∨ (¬J))) ∨ (J ∨ O))",
+      "(¬J)"
+    ],
+    "conclusion": "(¬J)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(Y ∨ ((W ¬ Y) ¬ (Y ¬ (¬Y))))",
+      "((((¬W) ¬ Y) ∨ Y) ∨ ((Y ∨ (¬Y)) ¬ ((¬W) ∨ Y)))",
+      "(¬Y)"
+    ],
+    "conclusion": "(Y ∨ ((W ¬ Y) ¬ (Y ¬ (¬Y))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((O ¬ M) ¬ (M ∨ (¬O))) ∨ (((¬O) ∨ (¬M)) ∨ ((¬M) ∨ (¬M))))",
+      "((O ¬ (M ∨ (¬O))) ∨ O)",
+      "(¬O)"
+    ],
+    "conclusion": "(((O ¬ M) ¬ (M ∨ (¬O))) ∨ (((¬O) ∨ (¬M)) ∨ ((¬M) ∨ (¬M))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬G) ∨ G) ¬ ((¬G) ¬ X)) ¬ (((¬G) ¬ (¬G)) ∨ ((¬X) ¬ (¬X))))",
+      "(¬X)",
+      "(X ∨ (X ∨ ((¬X) ¬ G)))"
+    ],
+    "conclusion": "(X ∨ (X ∨ ((¬X) ¬ G)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬X)",
+      "((((¬X) ¬ C) ∨ ((¬X) ¬ X)) ∨ (((¬X) ∨ (¬X)) ∨ ((¬C) ∨ C)))",
+      "(((C ∨ X) ∨ ((¬X) ∨ X)) ∨ X)"
+    ],
+    "conclusion": "((C ∨ X) ∨ ((¬X) ∨ X))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(Z ∨ (((¬Z) ∨ A) ¬ (A ∨ (¬A))))",
+      "(¬Z)"
+    ],
+    "conclusion": "(Z ∨ (((¬Z) ∨ A) ¬ (A ∨ (¬A))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(J ∨ E)",
+      "((((¬E) ∨ J) ∨ ((¬E) ∨ J)) ∨ ((J ¬ E) ∨ (J ¬ (¬E))))",
+      "(¬J)"
+    ],
+    "conclusion": "((((¬E) ∨ J) ∨ ((¬E) ∨ J)) ∨ ((J ¬ E) ∨ (J ¬ (¬E))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((N ¬ N) ∨ ((¬Q) ¬ N)) ¬ (¬N))",
+      "(Q ∨ Q)",
+      "(¬Q)"
+    ],
+    "conclusion": "Q",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬U)",
+      "(U ∨ ((U ¬ (¬Y)) ¬ ((¬U) ∨ (¬Y))))",
+      "((((¬Y) ∨ (¬U)) ∨ (Y ∨ Y)) ∨ (((¬Y) ∨ Y) ¬ (Y ¬ U)))"
+    ],
+    "conclusion": "(U ∨ ((U ¬ (¬Y)) ¬ ((¬U) ∨ (¬Y))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((D ¬ ((¬D) ¬ D)) ∨ U)",
+      "(¬U)",
+      "(((D ∨ U) ¬ ((¬U) ∨ D)) ¬ ((D ¬ U) ∨ ((¬U) ∨ U)))"
+    ],
+    "conclusion": "(D ¬ ((¬D) ¬ D))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬T)",
+      "(T ∨ ((¬T) ¬ ((¬P) ¬ P)))"
+    ],
+    "conclusion": "((¬T) ¬ ((¬P) ¬ P))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬X) ¬ (¬X)) ¬ ((¬O) ¬ O)) ∨ O)",
+      "(¬O)",
+      "(((X ∨ (¬X)) ¬ ((¬O) ¬ (¬X))) ∨ (((¬O) ¬ (¬O)) ∨ (O ¬ O)))"
+    ],
+    "conclusion": "((((¬X) ¬ (¬X)) ¬ ((¬O) ¬ O)) ∨ O)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬M) ∨ M) ¬ (¬K)) ∨ K)",
+      "(¬K)",
+      "(K ∨ ((M ∨ (¬K)) ¬ (¬K)))"
+    ],
+    "conclusion": "(K ∨ ((M ∨ (¬K)) ¬ (¬K)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(¬W)",
+      "(W ∨ ((¬P) ¬ (W ¬ P)))",
+      "((((¬W) ∨ P) ∨ ((¬W) ∨ P)) ¬ (((¬P) ∨ W) ¬ (P ∨ (¬P))))"
+    ],
+    "conclusion": "((¬P) ¬ (W ¬ P))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(((F ∨ F) ¬ ((¬Q) ∨ (¬F))) ∨ Q)",
+      "(¬Q)"
+    ],
+    "conclusion": "((F ∨ F) ¬ ((¬Q) ∨ (¬F)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "I",
+      "((((¬O) ¬ I) ∨ ((¬I) ¬ I)) ∨ I)",
+      "(¬I)"
+    ],
+    "conclusion": "((((¬O) ¬ I) ∨ ((¬I) ¬ I)) ∨ I)",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬A) ¬ A) ∨ (H ¬ A)) ∨ H)",
+      "((((¬A) ¬ (¬A)) ¬ ((¬H) ¬ (¬H))) ∨ ((H ∨ (¬H)) ¬ ((¬H) ∨ H)))",
+      "(¬H)"
+    ],
+    "conclusion": "(((¬A) ¬ A) ∨ (H ¬ A))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "((¬Y) ∨ (Y ¬ P))",
+      "(¬Y)",
+      "(Y ∨ ((Y ¬ (¬Y)) ∨ (P ∨ (¬P))))"
+    ],
+    "conclusion": "(Y ∨ ((Y ¬ (¬Y)) ∨ (P ∨ (¬P))))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  },
+  {
+    "premises": [
+      "(R ∨ (((¬M) ¬ (¬R)) ¬ ((¬R) ¬ R)))",
+      "(¬R)",
+      "(((¬M) ¬ R) ∨ (((¬M) ∨ R) ∨ (R ¬ M)))"
+    ],
+    "conclusion": "(((¬M) ¬ R) ∨ (((¬M) ∨ R) ∨ (R ¬ M)))",
+    "applied_rules": [
+      "disjunctive_syllogism"
+    ]
+  }
+]

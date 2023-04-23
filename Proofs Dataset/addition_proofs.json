@@ -1,0 +1,795 @@
+[
+  {
+    "premises": [
+      "(((F ¬ F) ⊕ (F ⊕ H)) ∨ (((¬H) ↔ (¬F)) ¬ (F ∧ (¬F))))",
+      "((((¬F) ∨ H) → (F → (¬H))) ↔ (F ∧ ((¬F) ⊕ (¬F))))",
+      "((H ¬ (H ∧ (¬H))) ¬ H)"
+    ],
+    "conclusion": "(((F ¬ F) ⊕ (F ⊕ H)) ∨ (((¬H) ↔ (¬F)) ¬ (F ∧ (¬F))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬X) ∧ (¬M)) → (¬M)) ∨ (((¬X) ↔ (¬M)) ↔ ((¬X) ⊕ (¬M))))",
+      "((X ∧ ((¬M) ¬ (¬X))) ∧ (X ∨ ((¬M) → X)))",
+      "(((M ∧ (¬M)) ∨ X) ⊕ ((X ∨ (¬M)) ∨ (M ↔ X)))"
+    ],
+    "conclusion": "((((¬X) ∧ (¬M)) → (¬M)) ∨ (((¬X) ↔ (¬M)) ↔ ((¬X) ⊕ (¬M))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬U) ¬ U) → ((¬U) ↔ (¬U))) ∨ (¬U))",
+      "((((¬U) ∧ U) ¬ (U ∨ (¬W))) ∨ (((¬U) ∧ (¬U)) ∨ ((¬W) ⊕ W)))"
+    ],
+    "conclusion": "((((¬U) ∧ U) ¬ (U ∨ (¬W))) ∨ (((¬U) ∧ (¬U)) ∨ ((¬W) ⊕ W)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "T",
+      "(((A ⊕ (¬T)) ⊕ (¬T)) ∨ ((T ¬ (¬T)) ¬ ((¬T) → T)))",
+      "(((T ¬ (¬A)) ∧ (T ↔ (¬T))) ∨ A)"
+    ],
+    "conclusion": "(((T ¬ (¬A)) ∧ (T ↔ (¬T))) ∨ A)",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬B) ∧ (B ¬ (¬B))) ⊕ (¬I))",
+      "(I ∨ ((¬B) ⊕ (I ∨ B)))"
+    ],
+    "conclusion": "(I ∨ ((¬B) ⊕ (I ∨ B)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(L ↔ (L ⊕ ((¬K) ∧ K)))",
+      "(((K ∧ (¬K)) ∧ (L ¬ (¬K))) ∨ (¬K))"
+    ],
+    "conclusion": "(((K ∧ (¬K)) ∧ (L ¬ (¬K))) ∨ (¬K))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬P) ∨ ((P ¬ P) ↔ ((¬P) → N)))",
+      "(¬P)",
+      "((((¬N) ⊕ P) ⊕ (¬N)) ↔ (((¬P) ∨ (¬P)) ∧ (N ¬ (¬N))))"
+    ],
+    "conclusion": "((¬P) ∨ ((P ¬ P) ↔ ((¬P) → N)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((V ↔ D) ¬ (D ⊕ V)) ∨ ((V → D) ∨ (V ¬ D)))",
+      "((V ⊕ ((¬D) ∨ D)) ↔ ((V ⊕ (¬D)) ∨ (V ∧ D)))"
+    ],
+    "conclusion": "(((V ↔ D) ¬ (D ⊕ V)) ∨ ((V → D) ∨ (V ¬ D)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((W ¬ (W ∧ (¬E))) ∨ (W ∧ ((¬E) ⊕ (¬E))))",
+      "E",
+      "(((W ∧ (¬W)) ∧ ((¬W) ∧ (¬E))) ¬ ((W ¬ (¬E)) ∧ ((¬W) ∨ (¬W))))"
+    ],
+    "conclusion": "((W ¬ (W ∧ (¬E))) ∨ (W ∧ ((¬E) ⊕ (¬E))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((I → I) ∧ (Z ¬ Z)) ∨ ((Z ↔ I) ∨ ((¬I) ∧ I)))",
+      "((¬I) ↔ ((Z ∨ (¬Z)) ∨ (I → I)))",
+      "(((I ↔ I) ¬ (I ¬ Z)) ¬ ((Z ⊕ (¬I)) ∧ (¬Z)))"
+    ],
+    "conclusion": "(((I → I) ∧ (Z ¬ Z)) ∨ ((Z ↔ I) ∨ ((¬I) ∧ I)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((O ↔ O) ↔ ((¬G) ∨ (¬O))) ¬ ((¬O) ∨ G))",
+      "(((¬O) ↔ ((¬O) ∧ O)) ∨ ((¬O) ¬ ((¬O) ↔ O)))"
+    ],
+    "conclusion": "(((¬O) ↔ ((¬O) ∧ O)) ∨ ((¬O) ¬ ((¬O) ↔ O)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(V ∨ ((V ¬ (¬E)) ↔ ((¬V) ¬ V)))",
+      "(((¬V) ¬ ((¬V) ∧ (¬E))) ∧ ((¬E) → (¬E)))"
+    ],
+    "conclusion": "(V ∨ ((V ¬ (¬E)) ↔ ((¬V) ¬ V)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((W ⊕ W) ∨ (U → U)) ∨ (((¬W) ∨ W) ⊕ (U → (¬W))))",
+      "(¬U)",
+      "W"
+    ],
+    "conclusion": "(((W ⊕ W) ∨ (U → U)) ∨ (((¬W) ∨ W) ⊕ (U → (¬W))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((Z ↔ ((¬Z) → C)) ¬ ((C → C) → (C ↔ (¬C))))",
+      "(((Z ∨ (¬Z)) ¬ ((¬Z) ∧ C)) ∨ ((Z ↔ (¬C)) ¬ (C ∧ Z)))",
+      "(¬Z)"
+    ],
+    "conclusion": "(((Z ∨ (¬Z)) ¬ ((¬Z) ∧ C)) ∨ ((Z ↔ (¬C)) ¬ (C ∧ Z)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬A) → (Y ¬ (¬A))) ⊕ Y)",
+      "(((Y ∨ Y) ⊕ A) ∨ (((¬A) ∧ Y) ↔ (A → (¬A))))",
+      "((((¬A) ∨ A) ↔ (A ⊕ (¬A))) ∨ ((Y ∧ (¬A)) ↔ (¬Y)))"
+    ],
+    "conclusion": "(((Y ∨ Y) ⊕ A) ∨ (((¬A) ∧ Y) ↔ (A → (¬A))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(¬K)",
+      "K",
+      "((X ∧ ((¬K) ∧ K)) ∨ (((¬K) ∧ (¬K)) ∨ (X ⊕ K)))"
+    ],
+    "conclusion": "((X ∧ ((¬K) ∧ K)) ∨ (((¬K) ∧ (¬K)) ∨ (X ⊕ K)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬D) ∨ V) ⊕ (¬D)) ∨ (((¬V) ↔ D) ∨ ((¬D) ∧ D)))",
+      "((((¬D) ∧ (¬V)) ¬ ((¬D) ∧ D)) ∨ ((V ↔ D) → (D → D)))"
+    ],
+    "conclusion": "((((¬D) ∨ V) ⊕ (¬D)) ∨ (((¬V) ↔ D) ∨ ((¬D) ∧ D)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((O ∧ O) ↔ ((¬W) ∧ O)) ∨ (O → ((¬O) ¬ W)))",
+      "(((W ∨ (¬O)) ¬ ((¬O) ∨ O)) ∨ (W ↔ ((¬W) ∧ (¬O))))"
+    ],
+    "conclusion": "(((W ∨ (¬O)) ¬ ((¬O) ∨ O)) ∨ (W ↔ ((¬W) ∧ (¬O))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬S) ∨ J) ∨ (J ⊕ (¬S))) ∧ ((S ∧ S) → ((¬S) ¬ J)))",
+      "((¬J) ∨ ((J ¬ (¬J)) → ((¬S) ⊕ (¬J))))"
+    ],
+    "conclusion": "((¬J) ∨ ((J ¬ (¬J)) → ((¬S) ⊕ (¬J))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((I ¬ (¬L)) ¬ ((¬I) ¬ (¬L))) → (¬L))",
+      "((((¬I) ∧ L) ∨ (L ¬ (¬I))) ⊕ (L ¬ I))",
+      "((((¬I) ⊕ (¬I)) ∧ ((¬I) ¬ L)) ∨ L)"
+    ],
+    "conclusion": "((((¬I) ⊕ (¬I)) ∧ ((¬I) ¬ L)) ∨ L)",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬M) ∨ (((¬O) → (¬M)) → (O ∨ (¬M))))",
+      "(¬M)",
+      "(M ∧ ((O ¬ (¬M)) ∧ (¬M)))"
+    ],
+    "conclusion": "((¬M) ∨ (((¬O) → (¬M)) → (O ∨ (¬M))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬Z) ∧ ((¬C) ∧ C)) → ((Z ¬ Z) ¬ ((¬C) ¬ (¬Z))))",
+      "(((C → C) → ((¬Z) ⊕ Z)) ¬ Z)",
+      "((C ¬ ((¬C) ⊕ Z)) ∨ (Z ⊕ (¬Z)))"
+    ],
+    "conclusion": "((C ¬ ((¬C) ⊕ Z)) ∨ (Z ⊕ (¬Z)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((R ⊕ (¬L)) ⊕ (¬L)) ⊕ (¬L))",
+      "((((¬L) ¬ (¬R)) ↔ ((¬R) ∧ (¬R))) ∧ L)",
+      "(R ∨ (((¬L) ∨ (¬R)) ∧ ((¬L) ¬ L)))"
+    ],
+    "conclusion": "(R ∨ (((¬L) ∨ (¬R)) ∧ ((¬L) ¬ L)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(G ⊕ (((¬Q) ¬ (¬Q)) ↔ ((¬Q) ∨ Q)))",
+      "((G ¬ (G ∨ G)) ∨ Q)"
+    ],
+    "conclusion": "((G ¬ (G ∨ G)) ∨ Q)",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((V ¬ V) ¬ ((¬S) ∧ S)) ∨ ((V ∧ S) ¬ ((¬V) → V)))",
+      "((¬V) ∨ ((¬V) ∨ ((¬S) → V)))"
+    ],
+    "conclusion": "(((V ¬ V) ¬ ((¬S) ∧ S)) ∨ ((V ∧ S) ¬ ((¬V) → V)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬W) ¬ W) ∨ (M ∨ (¬M))) ∨ ((W ¬ M) ¬ W))",
+      "((((¬W) ¬ W) ∨ (W ¬ (¬M))) ∨ (¬W))"
+    ],
+    "conclusion": "((((¬W) ¬ W) ∨ (M ∨ (¬M))) ∨ ((W ¬ M) ¬ W))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬P) ¬ (¬R)) ¬ (R ¬ (¬R))) ∨ (P ¬ (P ∨ P)))",
+      "((((¬P) ∨ R) ¬ (R ¬ (¬R))) ∨ (((¬P) ¬ R) ¬ (R ¬ (¬R))))"
+    ],
+    "conclusion": "((((¬P) ∨ R) ¬ (R ¬ (¬R))) ∨ (((¬P) ¬ R) ¬ (R ¬ (¬R))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((O ∨ B) ∨ ((¬O) ¬ B)) ∨ (((¬B) ¬ O) ¬ (B ∨ B)))",
+      "O",
+      "B"
+    ],
+    "conclusion": "(((O ∨ B) ∨ ((¬O) ¬ B)) ∨ (((¬B) ¬ O) ¬ (B ∨ B)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬P) ∨ ((P ∨ (¬P)) ¬ ((¬P) ∨ (¬W))))",
+      "(((¬P) ¬ W) ∨ ((W ¬ W) ∨ (W ∨ (¬W))))",
+      "(((P ∨ (¬W)) ∨ ((¬P) ∨ P)) ∨ ((W ∨ P) ¬ ((¬W) ¬ W)))"
+    ],
+    "conclusion": "((¬P) ∨ ((P ∨ (¬P)) ¬ ((¬P) ∨ (¬W))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((V ∨ V) ∨ ((¬V) ¬ (¬L))) ¬ V)",
+      "((((¬V) ∨ (¬V)) ∨ (L ¬ (¬V))) ∨ (((¬V) ∨ V) ∨ (V ¬ (¬V))))",
+      "(((¬V) ∨ ((¬V) ∨ (¬V))) ¬ (((¬L) ∨ L) ∨ L))"
+    ],
+    "conclusion": "((((¬V) ∨ (¬V)) ∨ (L ¬ (¬V))) ∨ (((¬V) ∨ V) ∨ (V ¬ (¬V))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((L ¬ (¬L)) ¬ ((¬L) ∨ (¬P))) ∨ (((¬L) ∨ P) ¬ (P ∨ (¬P))))",
+      "((((¬L) ¬ P) ∨ ((¬L) ∨ L)) ∨ (((¬L) ¬ L) ∨ P))",
+      "((((¬L) ¬ L) ∨ (L ∨ L)) ∨ L)"
+    ],
+    "conclusion": "((((¬L) ¬ P) ∨ ((¬L) ∨ L)) ∨ (((¬L) ¬ L) ∨ P))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((S ¬ S) ¬ ((¬S) ¬ (¬E))) ∨ ((E ∨ (¬S)) ¬ ((¬E) ∨ (¬E))))",
+      "((S ¬ (S ¬ (¬S))) ¬ ((¬E) ∨ (S ∨ (¬S))))"
+    ],
+    "conclusion": "(((S ¬ S) ¬ ((¬S) ¬ (¬E))) ∨ ((E ∨ (¬S)) ¬ ((¬E) ∨ (¬E))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "Q",
+      "((((¬Q) ∨ D) ∨ D) ∨ ((Q ¬ D) ∨ (D ¬ Q)))",
+      "((¬D) ∨ (((¬Q) ¬ (¬D)) ∨ ((¬Q) ¬ D)))"
+    ],
+    "conclusion": "((¬D) ∨ (((¬Q) ¬ (¬D)) ∨ ((¬Q) ¬ D)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((C ∨ (¬C)) ∨ (V ¬ (¬V))) ∨ (¬V))",
+      "((((¬C) ¬ V) ¬ ((¬C) ∨ C)) ¬ ((V ∨ C) ∨ C))"
+    ],
+    "conclusion": "(((C ∨ (¬C)) ∨ (V ¬ (¬V))) ∨ (¬V))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬T) ∨ T) ∨ (B ∨ T)) ∨ ((B ¬ (¬B)) ¬ ((¬T) ∨ T)))",
+      "(((¬T) ∨ (T ∨ (¬T))) ∨ ((B ¬ B) ¬ (B ∨ (¬T))))",
+      "((((¬B) ∨ (¬B)) ∨ (B ¬ (¬B))) ¬ ((T ∨ T) ¬ ((¬T) ∨ T)))"
+    ],
+    "conclusion": "((((¬T) ∨ T) ∨ (B ∨ T)) ∨ ((B ¬ (¬B)) ¬ ((¬T) ∨ T)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "M",
+      "M",
+      "(((Q ¬ M) ¬ ((¬M) ¬ M)) ∨ Q)"
+    ],
+    "conclusion": "(((Q ¬ M) ¬ ((¬M) ¬ M)) ∨ Q)",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬L) ∨ (¬R)) ∨ (R ∨ (¬L))) ∨ (L ∨ (L ∨ L)))",
+      "(((L ∨ (¬L)) ¬ ((¬R) ¬ (¬R))) ∨ (((¬L) ∨ (¬R)) ∨ (R ∨ (¬L))))"
+    ],
+    "conclusion": "(((L ∨ (¬L)) ¬ ((¬R) ¬ (¬R))) ∨ (((¬L) ∨ (¬R)) ∨ (R ∨ (¬L))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "L",
+      "(((L ¬ (¬L)) ∨ ((¬N) ¬ (¬L))) ∨ (((¬L) ∨ (¬N)) ∨ (L ¬ (¬L))))",
+      "((((¬L) ¬ L) ∨ (L ¬ N)) ¬ (((¬N) ∨ L) ∨ (N ∨ (¬L))))"
+    ],
+    "conclusion": "(((L ¬ (¬L)) ∨ ((¬N) ¬ (¬L))) ∨ (((¬L) ∨ (¬N)) ∨ (L ¬ (¬L))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(Z ∨ (Z ∨ ((¬Z) ¬ L)))",
+      "((((¬L) ¬ L) ∨ Z) ∨ ((L ¬ (¬L)) ∨ ((¬Z) ∨ (¬L))))",
+      "((((¬L) ¬ (¬L)) ¬ (Z ¬ (¬Z))) ¬ (((¬L) ∨ L) ¬ ((¬Z) ¬ Z)))"
+    ],
+    "conclusion": "(Z ∨ (Z ∨ ((¬Z) ¬ L)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬F) ¬ (¬O)) ∨ (((¬O) ∨ O) ¬ ((¬F) ¬ O)))",
+      "((((¬F) ¬ (¬O)) ¬ (O ¬ O)) ¬ (¬F))"
+    ],
+    "conclusion": "(((¬F) ¬ (¬O)) ∨ (((¬O) ∨ O) ¬ ((¬F) ¬ O)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬K) ¬ (A ∨ (¬K))) ¬ (((¬A) ¬ K) ∨ (K ¬ A)))",
+      "(((A ∨ (¬A)) ∨ (A ∨ K)) ∨ ((¬K) ∨ ((¬A) ¬ (¬A))))"
+    ],
+    "conclusion": "(((A ∨ (¬A)) ∨ (A ∨ K)) ∨ ((¬K) ∨ ((¬A) ¬ (¬A))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((L ∨ L) ¬ (D ¬ (¬L))) ∨ (D ¬ ((¬L) ¬ L)))",
+      "((((¬D) ¬ (¬L)) ∨ ((¬L) ∨ D)) ∨ D)",
+      "((((¬L) ¬ D) ¬ ((¬L) ∨ L)) ∨ (((¬L) ¬ (¬L)) ∨ (¬D)))"
+    ],
+    "conclusion": "((((¬L) ¬ D) ¬ ((¬L) ∨ L)) ∨ (((¬L) ¬ (¬L)) ∨ (¬D)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((Z ∨ (Z ¬ Z)) ∨ (((¬Z) ¬ C) ¬ ((¬C) ¬ (¬Z))))",
+      "((((¬Z) ¬ (¬Z)) ¬ ((¬C) ¬ (¬Z))) ¬ ((Z ¬ (¬C)) ∨ (Z ∨ C)))",
+      "(((Z ¬ (¬Z)) ¬ (Z ¬ (¬C))) ∨ ((Z ¬ Z) ∨ (C ∨ (¬Z))))"
+    ],
+    "conclusion": "((Z ∨ (Z ¬ Z)) ∨ (((¬Z) ¬ C) ¬ ((¬C) ¬ (¬Z))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬S) ∨ ((¬K) ¬ ((¬K) ∨ (¬S))))",
+      "(K ∨ (((¬K) ∨ K) ¬ (S ∨ S)))"
+    ],
+    "conclusion": "((¬S) ∨ ((¬K) ¬ ((¬K) ∨ (¬S))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((F ¬ (¬F)) ¬ (T ¬ (¬F))) ∨ (((¬T) ∨ (¬T)) ∨ (F ¬ T)))",
+      "((¬F) ∨ ((F ¬ (¬T)) ¬ F))"
+    ],
+    "conclusion": "(((F ¬ (¬F)) ¬ (T ¬ (¬F))) ∨ (((¬T) ∨ (¬T)) ∨ (F ¬ T)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((B ∨ F) ¬ (¬B)) ¬ (((¬F) ¬ (¬F)) ∨ ((¬F) ∨ (¬F))))",
+      "((((¬B) ∨ B) ¬ F) ∨ (((¬F) ∨ B) ∨ (B ¬ (¬B))))"
+    ],
+    "conclusion": "((((¬B) ∨ B) ¬ F) ∨ (((¬F) ∨ B) ∨ (B ¬ (¬B))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(¬Z)",
+      "((((¬Z) ¬ K) ∨ ((¬K) ¬ (¬K))) ∨ (((¬Z) ¬ (¬Z)) ¬ ((¬K) ¬ K)))",
+      "(((K ¬ (¬K)) ¬ ((¬Z) ¬ (¬Z))) ∨ ((K ¬ (¬K)) ∨ (K ∨ (¬Z))))"
+    ],
+    "conclusion": "((((¬Z) ¬ K) ∨ ((¬K) ¬ (¬K))) ∨ (((¬Z) ¬ (¬Z)) ¬ ((¬K) ¬ K)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((H ¬ (¬G)) ∨ G) ∨ G)",
+      "((((¬G) ¬ (¬H)) ∨ ((¬H) ∨ H)) ∨ ((¬H) ∨ (G ¬ H)))",
+      "(¬H)"
+    ],
+    "conclusion": "(((H ¬ (¬G)) ∨ G) ∨ G)",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((K ¬ (¬K)) ¬ ((¬B) ∨ (¬B))) ∨ (¬K))",
+      "(B ∨ (((¬B) ¬ B) ∨ (B ¬ B)))",
+      "(((K ¬ B) ∨ (¬B)) ¬ ((K ¬ (¬B)) ¬ (B ∨ (¬K))))"
+    ],
+    "conclusion": "(B ∨ (((¬B) ¬ B) ∨ (B ¬ B)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((O ∨ O) ∨ Z) ¬ ((¬O) ¬ (Z ¬ Z)))",
+      "(((O ∨ O) ¬ ((¬Z) ¬ O)) ∨ (¬Z))"
+    ],
+    "conclusion": "(((O ∨ O) ¬ ((¬Z) ¬ O)) ∨ (¬Z))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(¬I)",
+      "((L ∨ ((¬I) ∨ L)) ∨ (((¬I) ∨ I) ∨ (¬L)))"
+    ],
+    "conclusion": "((L ∨ ((¬I) ∨ L)) ∨ (((¬I) ∨ I) ∨ (¬L)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "M",
+      "(((M ∨ (¬E)) ∨ ((¬M) ∨ (¬E))) ∨ (((¬E) ∨ M) ∨ ((¬E) ∨ M)))",
+      "((M ∨ ((¬M) ∨ (¬M))) ∨ ((¬M) ∨ (M ∨ (¬E))))"
+    ],
+    "conclusion": "(((M ∨ (¬E)) ∨ ((¬M) ∨ (¬E))) ∨ (((¬E) ∨ M) ∨ ((¬E) ∨ M)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(C ∨ ((V ∨ (¬C)) ∨ ((¬V) ∨ V)))",
+      "(V ∨ C)",
+      "(((¬V) ∨ ((¬V) ∨ (¬C))) ∨ V)"
+    ],
+    "conclusion": "(V ∨ C)",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬Q) ∨ C) ∨ (Q ∨ (¬Q))) ∨ ((Q ∨ (¬Q)) ∨ ((¬C) ∨ (¬C))))",
+      "((Q ∨ ((¬Q) ∨ (¬C))) ∨ (¬Q))",
+      "((((¬C) ∨ (¬Q)) ∨ C) ∨ ((Q ∨ C) ∨ ((¬C) ∨ C)))"
+    ],
+    "conclusion": "((((¬C) ∨ (¬Q)) ∨ C) ∨ ((Q ∨ C) ∨ ((¬C) ∨ C)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((R ∨ (¬C)) ∨ ((¬R) ∨ R)) ∨ ((R ∨ (¬R)) ∨ C))",
+      "((((¬R) ∨ (¬C)) ∨ ((¬R) ∨ (¬R))) ∨ (C ∨ (R ∨ R)))",
+      "((((¬R) ∨ R) ∨ (¬R)) ∨ (¬C))"
+    ],
+    "conclusion": "((((¬R) ∨ R) ∨ (¬R)) ∨ (¬C))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "B",
+      "(((¬J) ∨ ((¬B) ∨ B)) ∨ (((¬B) ∨ (¬J)) ∨ (J ∨ (¬B))))"
+    ],
+    "conclusion": "(((¬J) ∨ ((¬B) ∨ B)) ∨ (((¬B) ∨ (¬J)) ∨ (J ∨ (¬B))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬U) ∨ N) ∨ ((¬U) ∨ (¬U))) ∨ (((¬U) ∨ N) ∨ ((¬U) ∨ U)))",
+      "((U ∨ N) ∨ ((N ∨ U) ∨ U))"
+    ],
+    "conclusion": "((U ∨ N) ∨ ((N ∨ U) ∨ U))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬V) ∨ (¬N)) ∨ (V ∨ N)) ∨ (((¬V) ∨ V) ∨ (N ∨ (¬V))))",
+      "N",
+      "(((V ∨ (¬N)) ∨ (N ∨ (¬N))) ∨ (¬V))"
+    ],
+    "conclusion": "((((¬V) ∨ (¬N)) ∨ (V ∨ N)) ∨ (((¬V) ∨ V) ∨ (N ∨ (¬V))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬X) ∨ X) ∨ ((¬X) ∨ (¬Q))) ∨ ((Q ∨ X) ∨ ((¬X) ∨ (¬X))))",
+      "((((¬Q) ∨ (¬Q)) ∨ ((¬Q) ∨ (¬Q))) ∨ (((¬X) ∨ (¬X)) ∨ (X ∨ (¬X))))",
+      "(((Q ∨ Q) ∨ (Q ∨ Q)) ∨ ((X ∨ (¬Q)) ∨ ((¬X) ∨ X)))"
+    ],
+    "conclusion": "((((¬X) ∨ X) ∨ ((¬X) ∨ (¬Q))) ∨ ((Q ∨ X) ∨ ((¬X) ∨ (¬X))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((A ∨ (A ∨ A)) ∨ ((A ∨ (¬K)) ∨ ((¬A) ∨ (¬K))))",
+      "A",
+      "((((¬K) ∨ (¬K)) ∨ (A ∨ (¬K))) ∨ (¬A))"
+    ],
+    "conclusion": "((A ∨ (A ∨ A)) ∨ ((A ∨ (¬K)) ∨ ((¬A) ∨ (¬K))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬Q) ∨ Q) ∨ (Q ∨ V)) ∨ ((V ∨ Q) ∨ ((¬Q) ∨ Q)))",
+      "(¬V)"
+    ],
+    "conclusion": "((((¬Q) ∨ Q) ∨ (Q ∨ V)) ∨ ((V ∨ Q) ∨ ((¬Q) ∨ Q)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(R ∨ ((Z ∨ (¬Z)) ∨ Z))",
+      "(((¬R) ∨ R) ∨ R)",
+      "((¬Z) ∨ (((¬Z) ∨ (¬Z)) ∨ R))"
+    ],
+    "conclusion": "(R ∨ ((Z ∨ (¬Z)) ∨ Z))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬M) ∨ (((¬M) ∨ (¬M)) ∨ ((¬F) ∨ M)))",
+      "(((F ∨ (¬M)) ∨ (F ∨ M)) ∨ ((F ∨ F) ∨ (M ∨ F)))",
+      "((M ∨ (M ∨ (¬M))) ∨ (((¬F) ∨ (¬F)) ∨ (F ∨ M)))"
+    ],
+    "conclusion": "(((F ∨ (¬M)) ∨ (F ∨ M)) ∨ ((F ∨ F) ∨ (M ∨ F)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((C ∨ K) ∨ (¬K)) ∨ ((K ∨ C) ∨ ((¬C) ∨ (¬K))))",
+      "(((K ∨ (¬K)) ∨ (K ∨ (¬K))) ∨ K)",
+      "((((¬K) ∨ C) ∨ (C ∨ K)) ∨ (((¬C) ∨ (¬K)) ∨ ((¬C) ∨ K)))"
+    ],
+    "conclusion": "(((K ∨ (¬K)) ∨ (K ∨ (¬K))) ∨ K)",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "J",
+      "(((Q ∨ J) ∨ (Q ∨ (¬Q))) ∨ ((J ∨ J) ∨ ((¬Q) ∨ (¬J))))",
+      "(¬Q)"
+    ],
+    "conclusion": "(((Q ∨ J) ∨ (Q ∨ (¬Q))) ∨ ((J ∨ J) ∨ ((¬Q) ∨ (¬J))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((C ∨ C) ∨ (J ∨ (¬J))) ∨ ((C ∨ (¬J)) ∨ ((¬J) ∨ (¬C))))",
+      "((((¬J) ∨ C) ∨ ((¬J) ∨ C)) ∨ ((C ∨ (¬C)) ∨ ((¬C) ∨ (¬C))))",
+      "(((C ∨ J) ∨ ((¬J) ∨ C)) ∨ (J ∨ J))"
+    ],
+    "conclusion": "(((C ∨ C) ∨ (J ∨ (¬J))) ∨ ((C ∨ (¬J)) ∨ ((¬J) ∨ (¬C))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "M",
+      "(((M ∨ (¬X)) ∨ (¬X)) ∨ (((¬X) ∨ (¬M)) ∨ ((¬M) ∨ (¬M))))"
+    ],
+    "conclusion": "(((M ∨ (¬X)) ∨ (¬X)) ∨ (((¬X) ∨ (¬M)) ∨ ((¬M) ∨ (¬M))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((W ∨ (¬M)) ∨ (¬W)) ∨ (((¬M) ∨ M) ∨ (W ∨ (¬W))))",
+      "(((¬M) ∨ ((¬W) ∨ (¬M))) ∨ ((¬M) ∨ ((¬M) ∨ W)))"
+    ],
+    "conclusion": "(((¬M) ∨ ((¬W) ∨ (¬M))) ∨ ((¬M) ∨ ((¬M) ∨ W)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((M ∨ V) ∨ (V ∨ (¬M))) ∨ (((¬V) ∨ (¬V)) ∨ (V ∨ M)))",
+      "((((¬V) ∨ (¬V)) ∨ (¬V)) ∨ (V ∨ ((¬M) ∨ M)))"
+    ],
+    "conclusion": "((((¬V) ∨ (¬V)) ∨ (¬V)) ∨ (V ∨ ((¬M) ∨ M)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬T) ∨ R) ∨ ((¬T) ∨ (¬T))) ∨ (((¬T) ∨ (¬T)) ∨ ((¬R) ∨ T)))",
+      "(((T ∨ R) ∨ ((¬R) ∨ (¬T))) ∨ ((T ∨ (¬R)) ∨ ((¬R) ∨ T)))"
+    ],
+    "conclusion": "((((¬T) ∨ R) ∨ ((¬T) ∨ (¬T))) ∨ (((¬T) ∨ (¬T)) ∨ ((¬R) ∨ T)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬R) ∨ R) ∨ ((¬B) ∨ (¬R))) ∨ R)",
+      "(B ∨ (¬B))",
+      "(B ∨ (R ∨ ((¬B) ∨ R)))"
+    ],
+    "conclusion": "(B ∨ (R ∨ ((¬B) ∨ R)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬O) ∨ E) ∨ (¬O)) ∨ (E ∨ (E ∨ (¬E))))",
+      "((((¬O) ∨ (¬E)) ∨ ((¬O) ∨ O)) ∨ ((E ∨ (¬O)) ∨ (O ∨ (¬E))))"
+    ],
+    "conclusion": "((((¬O) ∨ E) ∨ (¬O)) ∨ (E ∨ (E ∨ (¬E))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "((¬Y) ∨ ((Y ∨ Y) ∨ (O ∨ Y)))",
+      "((¬Y) ∨ (O ∨ ((¬O) ∨ Y)))"
+    ],
+    "conclusion": "((¬Y) ∨ (O ∨ ((¬O) ∨ Y)))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((Z ∨ Z) ∨ ((¬M) ∨ (¬Z))) ∨ ((Z ∨ (¬Z)) ∨ (¬Z)))",
+      "(((Z ∨ (¬Z)) ∨ (¬Z)) ∨ (((¬Z) ∨ (¬Z)) ∨ (Z ∨ (¬Z))))",
+      "M"
+    ],
+    "conclusion": "(((Z ∨ (¬Z)) ∨ (¬Z)) ∨ (((¬Z) ∨ (¬Z)) ∨ (Z ∨ (¬Z))))",
+    "applied_rules": [
+      "addition"
+    ]
+  },
+  {
+    "premises": [
+      "(((H ∨ (¬H)) ∨ (H ∨ H)) ∨ ((¬H) ∨ (H ∨ H)))",
+      "M",
+      "((((¬M) ∨ M) ∨ ((¬H) ∨ (¬H))) ∨ ((M ∨ (¬M)) ∨ (¬H)))"
+    ],
+    "conclusion": "((((¬M) ∨ M) ∨ ((¬H) ∨ (¬H))) ∨ ((M ∨ (¬M)) ∨ (¬H)))",
+    "applied_rules": [
+      "addition"
+    ]
+  }
+]

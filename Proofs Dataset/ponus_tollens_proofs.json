@@ -1,0 +1,551 @@
+[
+  {
+    "premises": [
+      "P",
+      "P",
+      "(P → (((¬P) ¬ (¬E)) → P))"
+    ],
+    "conclusion": "(((¬P) ¬ (¬E)) → P)",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬V) → ((N ¬ V) ¬ (N → (¬N))))",
+      "(¬V)"
+    ],
+    "conclusion": "((N ¬ V) ¬ (N → (¬N)))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬F)",
+      "((¬F) → (F ¬ (F ¬ (¬M))))"
+    ],
+    "conclusion": "(F ¬ (F ¬ (¬M)))",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "X",
+      "(R → ((R → R) ¬ ((¬X) ¬ (¬R))))",
+      "R"
+    ],
+    "conclusion": "((R → R) ¬ ((¬X) ¬ (¬R)))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "V",
+      "((¬V) ¬ ((¬X) ¬ (V ¬ (¬V))))",
+      "(V → (((¬V) ¬ V) ¬ (X ¬ V)))"
+    ],
+    "conclusion": "(((¬V) ¬ V) ¬ (X ¬ V))",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "Q",
+      "(((¬Z) → ((¬Z) → Q)) → ((Z → (¬Z)) ¬ ((¬Z) → (¬Z))))",
+      "(Q → ((Q ¬ Q) ¬ (Z → Z)))"
+    ],
+    "conclusion": "((Q ¬ Q) ¬ (Z → Z))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬E) ¬ P) → P) → (¬P))",
+      "(((¬E) ¬ ((¬P) → E)) → E)",
+      "(¬E)"
+    ],
+    "conclusion": "(¬((¬E) ¬ ((¬P) → E)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "M",
+      "((((¬O) ¬ M) ¬ (M → M)) → O)"
+    ],
+    "conclusion": "(¬(((¬O) ¬ M) ¬ (M → M)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "(((O → (¬D)) ¬ (¬O)) → O)"
+    ],
+    "conclusion": "(¬((O → (¬D)) ¬ (¬O)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬X) → (¬X)) ¬ ((¬I) → (¬I))) → ((I ¬ X) → (I → X)))",
+      "X",
+      "(X → ((X → I) → ((¬X) ¬ (¬X))))"
+    ],
+    "conclusion": "((X → I) → ((¬X) ¬ (¬X)))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "Z",
+      "((((¬R) ¬ (¬R)) ¬ (¬Z)) → ((R → (¬Z)) ¬ (R ¬ Z)))",
+      "(Z → (((¬R) → (¬Z)) ¬ ((¬Z) ¬ (¬Z))))"
+    ],
+    "conclusion": "(((¬R) → (¬Z)) ¬ ((¬Z) ¬ (¬Z)))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬M) ¬ (¬M)) → (M ¬ F)) → F)",
+      "(¬F)"
+    ],
+    "conclusion": "(¬(((¬M) ¬ (¬M)) → (M ¬ F)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "J",
+      "(((J → (¬J)) → ((¬U) → J)) ¬ ((U → (¬U)) → (J ¬ J)))",
+      "(J → ((J → (¬U)) → ((¬J) ¬ U)))"
+    ],
+    "conclusion": "((J → (¬U)) → ((¬J) ¬ U))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬O) → (((¬N) → (¬N)) → (N → (¬N))))",
+      "(¬O)",
+      "((((¬N) → (¬N)) → (N ¬ N)) ¬ ((¬O) → ((¬O) ¬ N)))"
+    ],
+    "conclusion": "(((¬N) → (¬N)) → (N → (¬N)))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬X) → (¬X))",
+      "(¬X)",
+      "((X → (I ¬ (¬X))) ¬ ((¬X) ¬ (I ¬ (¬X))))"
+    ],
+    "conclusion": "(¬X)",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((Z → (¬Z)) → (E ¬ (¬E))) → E)",
+      "Z",
+      "(¬E)"
+    ],
+    "conclusion": "(¬((Z → (¬Z)) → (E ¬ (¬E))))",
+    "applied_rules": [
+      "modus_tollens",
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "H",
+      "(H → H)"
+    ],
+    "conclusion": "H",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬S)",
+      "(((S → S) → (P → S)) ¬ (((¬S) → (¬S)) ¬ (S ¬ P)))",
+      "((((¬S) ¬ S) → (P ¬ (¬P))) → S)"
+    ],
+    "conclusion": "(¬(((¬S) ¬ S) → (P ¬ (¬P))))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬W)",
+      "(¬W)",
+      "((¬W) → (((¬N) ¬ (¬N)) ¬ W))"
+    ],
+    "conclusion": "(((¬N) ¬ (¬N)) ¬ W)",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((G → (G → I)) → G)",
+      "(¬G)",
+      "(((¬G) ¬ ((¬G) ¬ I)) ¬ G)"
+    ],
+    "conclusion": "(¬(G → (G → I)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬B) → (H → (¬H))) → H)",
+      "(¬H)"
+    ],
+    "conclusion": "(¬((¬B) → (H → (¬H))))",
+    "applied_rules": [
+      "modus_tollens",
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬F) → O)",
+      "(¬F)"
+    ],
+    "conclusion": "O",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬J)",
+      "((¬J) → ((¬A) ¬ (¬A)))"
+    ],
+    "conclusion": "((¬A) ¬ (¬A))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬E)",
+      "((¬E) → (¬E))",
+      "(E → (¬B))"
+    ],
+    "conclusion": "(¬E)",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(S → (S → (S ¬ S)))",
+      "(¬T)",
+      "S"
+    ],
+    "conclusion": "(S → (S ¬ S))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "H",
+      "(H → (((¬V) → V) ¬ V))",
+      "(((¬H) ¬ (V ¬ (¬H))) ¬ (((¬V) ¬ (¬V)) ¬ (¬H)))"
+    ],
+    "conclusion": "(((¬V) → V) ¬ V)",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "E",
+      "((((¬E) → (¬E)) ¬ (V ¬ E)) ¬ ((¬E) → (¬V)))",
+      "(E → (((¬E) → V) → ((¬V) ¬ E)))"
+    ],
+    "conclusion": "(((¬E) → V) → ((¬V) ¬ E))",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(E → (((¬T) → (¬T)) → (¬E)))",
+      "E"
+    ],
+    "conclusion": "(((¬T) → (¬T)) → (¬E))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "I",
+      "(I → (((¬I) → I) → (I → I)))",
+      "((V → (V ¬ I)) ¬ ((I ¬ (¬V)) → (V ¬ (¬V))))"
+    ],
+    "conclusion": "(((¬I) → I) → (I → I))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "V",
+      "(V → V)"
+    ],
+    "conclusion": "V",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "S",
+      "((((¬S) ¬ (¬S)) → (S ¬ (¬H))) → ((H ¬ (¬H)) ¬ ((¬S) ¬ S)))",
+      "(S → (¬H))"
+    ],
+    "conclusion": "(¬H)",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "(((V ¬ V) ¬ (O ¬ O)) → O)"
+    ],
+    "conclusion": "(¬((V ¬ V) ¬ (O ¬ O)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬L)",
+      "((¬L) → ((L → L) ¬ (¬L)))"
+    ],
+    "conclusion": "((L → L) ¬ (¬L))",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "A",
+      "(A → ((Z ¬ (¬A)) ¬ ((¬Z) → (¬Z))))",
+      "(Z → A)"
+    ],
+    "conclusion": "((Z ¬ (¬A)) ¬ ((¬Z) → (¬Z)))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(U → ((¬G) → ((¬G) → (¬U))))",
+      "(¬U)",
+      "((((¬G) ¬ (¬U)) ¬ (U → (¬U))) → U)"
+    ],
+    "conclusion": "(¬(((¬G) ¬ (¬U)) ¬ (U → (¬U))))",
+    "applied_rules": [
+      "modus_tollens",
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "B",
+      "((¬B) ¬ ((¬U) ¬ (¬U)))",
+      "(B → ((B ¬ (¬U)) → ((¬B) → B)))"
+    ],
+    "conclusion": "((B ¬ (¬U)) → ((¬B) → B))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬J)",
+      "((¬J) → G)"
+    ],
+    "conclusion": "G",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬Y)",
+      "(((Y → Y) → Y) ¬ (¬Z))",
+      "((¬Y) → (¬Z))"
+    ],
+    "conclusion": "(¬Z)",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "((((¬E) → (¬O)) → E) → O)"
+    ],
+    "conclusion": "(¬(((¬E) → (¬O)) → E))",
+    "applied_rules": [
+      "modus_tollens",
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬G)",
+      "(((Q ¬ G) → ((¬Q) → Q)) → G)"
+    ],
+    "conclusion": "(¬((Q ¬ G) → ((¬Q) → Q)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬B)",
+      "(¬B)",
+      "((¬B) → ((¬B) ¬ ((¬B) ¬ W)))"
+    ],
+    "conclusion": "((¬B) ¬ ((¬B) ¬ W))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬L) → (¬M)) ¬ (L ¬ M)) → L)",
+      "(¬L)"
+    ],
+    "conclusion": "(¬(((¬L) → (¬M)) ¬ (L ¬ M)))",
+    "applied_rules": [
+      "modus_tollens",
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬Z)",
+      "((¬Z) → K)"
+    ],
+    "conclusion": "K",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬D)",
+      "((¬D) → ((¬X) → (X ¬ D)))",
+      "(((D ¬ D) ¬ (D ¬ (¬D))) ¬ (((¬D) → X) → (X ¬ X)))"
+    ],
+    "conclusion": "((¬X) → (X ¬ D))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬Y) → (¬D))",
+      "(¬Y)",
+      "((((¬Y) ¬ (¬D)) → (¬Y)) → (¬Y))"
+    ],
+    "conclusion": "(¬D)",
+    "applied_rules": [
+      "modus_ponens",
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬B) ¬ (O ¬ O)) → O)",
+      "(¬O)",
+      "O"
+    ],
+    "conclusion": "(¬((¬B) ¬ (O ¬ O)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬U) → U) ¬ (U ¬ (¬Z))) ¬ (((¬U) ¬ (¬Z)) ¬ Z))",
+      "(((U ¬ U) → ((¬U) ¬ U)) → U)",
+      "(¬U)"
+    ],
+    "conclusion": "(¬((U ¬ U) → ((¬U) ¬ U)))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(¬O)",
+      "(Z → (((¬O) ¬ (¬Z)) → ((¬Z) ¬ (¬Z))))",
+      "((¬O) → ((Z → (¬O)) → (¬O)))"
+    ],
+    "conclusion": "((Z → (¬O)) → (¬O))",
+    "applied_rules": [
+      "modus_ponens"
+    ]
+  },
+  {
+    "premises": [
+      "((¬U) ¬ (D → ((¬D) ¬ (¬D))))",
+      "(¬U)",
+      "((D ¬ (U → (¬U))) → U)"
+    ],
+    "conclusion": "(¬(D ¬ (U → (¬U))))",
+    "applied_rules": [
+      "modus_tollens"
+    ]
+  },
+  {
+    "premises": [
+      "(((A → (¬A)) → (C → (¬C))) → A)",
+      "(¬A)",
+      "((((¬C) ¬ (¬C)) ¬ (¬C)) → (((¬A) ¬ (¬A)) → ((¬A) ¬ (¬A))))"
+    ],
+    "conclusion": "(¬((A → (¬A)) → (C → (¬C))))",
+    "applied_rules": [
+      "modus_tollens",
+      "modus_tollens"
+    ]
+  }
+]

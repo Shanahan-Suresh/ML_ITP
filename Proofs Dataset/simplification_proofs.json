@@ -1,0 +1,370 @@
+[
+  {
+    "premises": [
+      "(J ∨ ((¬J) ∨ (N ∨ N)))",
+      "(((J ∧ (¬N)) ∧ (N ∧ (¬J))) ∨ ((J ∧ J) ∨ ((¬J) ∧ J)))",
+      "((((¬N) ∧ J) ∧ (¬J)) ∧ ((N ∧ N) ∧ (N ∨ J)))"
+    ],
+    "conclusion": "((N ∧ N) ∧ (N ∨ J))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((¬Q) ∨ ((¬W) ∧ (Q ∧ (¬Q))))",
+      "((((¬Q) ∧ Q) ∧ ((¬W) ∨ (¬Q))) ∧ (((¬W) ∨ (¬W)) ∧ (¬W)))",
+      "W"
+    ],
+    "conclusion": "((¬Q) ∨ ((¬W) ∧ (Q ∧ (¬Q))))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((H ∨ (¬H)) ∨ ((¬H) ∨ (¬Z))) ∧ ((H ∨ (¬Z)) ∧ Z))",
+      "(((Z ∧ H) ∨ (Z ∨ (¬Z))) ∨ H)"
+    ],
+    "conclusion": "(((Z ∧ H) ∨ (Z ∨ (¬Z))) ∨ H)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "X",
+      "(((¬A) ∧ ((¬X) ∨ X)) ∧ ((A ∧ X) ∧ A))",
+      "(((¬X) ∧ (¬A)) ∨ ((A ∨ (¬X)) ∨ ((¬X) ∧ X)))"
+    ],
+    "conclusion": "(((¬X) ∧ (¬A)) ∨ ((A ∨ (¬X)) ∨ ((¬X) ∧ X)))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "H",
+      "(¬R)",
+      "(((H ∨ (¬R)) ∨ (¬H)) ∧ ((H ∧ R) ∧ ((¬R) ∧ H)))"
+    ],
+    "conclusion": "H",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((C ∨ (¬C)) ∨ ((¬C) ∧ C)) ∨ (C ∨ (C ∧ C)))",
+      "M",
+      "((¬C) ∧ ((C ∨ (¬C)) ∨ (C ∧ (¬C))))"
+    ],
+    "conclusion": "(((C ∨ (¬C)) ∨ ((¬C) ∧ C)) ∨ (C ∨ (C ∧ C)))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((J ∨ (¬J)) ∧ ((A ∨ A) ∨ ((¬A) ∧ A)))",
+      "(((¬J) ∨ A) ∨ (((¬A) ∧ A) ∨ ((¬A) ∨ (¬A))))"
+    ],
+    "conclusion": "(((¬J) ∨ A) ∨ (((¬A) ∧ A) ∨ ((¬A) ∨ (¬A))))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((F ∨ (¬M)) ∨ ((¬M) ∧ (¬M))) ∨ (¬M))",
+      "(((F ∨ (¬F)) ∧ ((¬M) ∨ (¬M))) ∧ (((¬M) ∨ (¬F)) ∨ (F ∨ (¬F))))"
+    ],
+    "conclusion": "(((¬M) ∨ (¬F)) ∨ (F ∨ (¬F)))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(S ∨ ((S ∨ H) ∧ (S ∨ (¬S))))",
+      "S",
+      "(((S ∧ (¬H)) ∧ ((¬S) ∧ S)) ∧ ((H ∨ H) ∧ (H ∨ S)))"
+    ],
+    "conclusion": "((H ∨ H) ∧ (H ∨ S))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬T) ∧ (¬J)) ∧ (T ∨ (¬J))) ∨ (((¬J) ∧ T) ∧ (T ∧ (¬T))))",
+      "(((J ∧ (¬J)) ∨ (J ∨ J)) ∧ ((T ∨ (¬J)) ∧ (¬T)))",
+      "((((¬T) ∨ (¬T)) ∨ ((¬T) ∨ J)) ∧ ((J ∧ J) ∨ J))"
+    ],
+    "conclusion": "((T ∨ (¬J)) ∧ (¬T))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬G) ∨ G) ∨ ((¬G) ∨ (¬G))) ∨ (S ∧ (¬G)))",
+      "((((¬S) ∨ (¬G)) ∧ (G ∨ S)) ∧ ((G ∨ (¬G)) ∨ (G ∧ G)))"
+    ],
+    "conclusion": "((G ∨ (¬G)) ∨ (G ∧ G))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬A) ∧ (¬X)) ∧ (A ∧ (¬A))) ∧ (X ∧ ((¬X) ∧ A)))",
+      "((((¬X) ∨ A) ∨ ((¬A) ∧ (¬X))) ∨ ((X ∨ (¬X)) ∧ (X ∨ (¬A))))",
+      "(((X ∧ X) ∨ (¬X)) ∧ (X ∨ (A ∧ (¬X))))"
+    ],
+    "conclusion": "((((¬X) ∨ A) ∨ ((¬A) ∧ (¬X))) ∨ ((X ∨ (¬X)) ∧ (X ∨ (¬A))))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((¬O) ∨ (((¬P) ∧ (¬O)) ∨ O))",
+      "(P ∨ (((¬P) ∨ (¬P)) ∨ ((¬O) ∨ (¬O))))",
+      "((((¬O) ∨ (¬P)) ∨ (¬P)) ∧ P)"
+    ],
+    "conclusion": "(P ∨ (((¬P) ∨ (¬P)) ∨ ((¬O) ∨ (¬O))))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬Q) ∨ G) ∨ ((¬Q) ∨ Q)) ∧ (((¬G) ∨ (¬Q)) ∨ ((¬G) ∧ Q)))",
+      "(((G ∧ G) ∧ ((¬G) ∨ Q)) ∨ ((Q ∧ Q) ∨ (¬G)))",
+      "(Q ∨ (¬G))"
+    ],
+    "conclusion": "(((¬G) ∨ (¬Q)) ∨ ((¬G) ∧ Q))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(D ∧ (¬D))",
+      "(((K ∨ (¬D)) ∧ (K ∨ (¬K))) ∨ ((D ∧ (¬K)) ∧ (D ∨ (¬D))))"
+    ],
+    "conclusion": "(¬D)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "N",
+      "X",
+      "((((¬X) ∧ (¬X)) ∧ (X ∨ (¬N))) ∧ ((N ∧ (¬X)) ∧ (¬N)))"
+    ],
+    "conclusion": "((N ∧ (¬X)) ∧ (¬N))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((¬S) ∨ T)",
+      "(((S ∨ (¬S)) ∧ ((¬S) ∧ T)) ∧ ((T ∧ T) ∧ ((¬T) ∨ T)))"
+    ],
+    "conclusion": "((T ∧ T) ∧ ((¬T) ∨ T))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬S) ∨ (¬Q)) ∧ S) ∨ S)",
+      "(((Q ∧ Q) ∧ ((¬Q) ∧ (¬S))) ∧ (((¬S) ∨ Q) ∨ (Q ∨ Q)))",
+      "Q"
+    ],
+    "conclusion": "((((¬S) ∨ (¬Q)) ∧ S) ∨ S)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((¬T) ∧ (A ∧ (¬A))) ∧ T)",
+      "(A ∨ (¬T))",
+      "((((¬A) ∨ (¬T)) ∨ ((¬A) ∧ (¬A))) ∧ (((¬A) ∧ T) ∧ (A ∨ T)))"
+    ],
+    "conclusion": "(A ∨ (¬T))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬O) ∧ O) ∧ ((¬Y) ∧ (¬O))) ∨ (Y ∧ ((¬Y) ∧ O)))",
+      "((Y ∧ ((¬O) ∨ O)) ∧ (((¬Y) ∧ (¬O)) ∨ (¬Y)))"
+    ],
+    "conclusion": "((((¬O) ∧ O) ∧ ((¬Y) ∧ (¬O))) ∨ (Y ∧ ((¬Y) ∧ O)))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((H ∧ (¬H)) ∧ (¬H)) ∧ ((H ∧ (¬S)) ∨ ((¬H) ∧ (¬H))))",
+      "((¬S) ∨ (((¬S) ∨ S) ∨ ((¬S) ∨ S)))",
+      "(S ∨ (¬H))"
+    ],
+    "conclusion": "(S ∨ (¬H))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((W ∨ B) ∧ (B ∧ (¬W))) ∧ (((¬B) ∧ (¬B)) ∨ W))",
+      "((((¬B) ∨ W) ∧ (B ∧ W)) ∧ ((W ∨ (¬B)) ∨ ((¬B) ∧ W)))",
+      "((((¬W) ∧ (¬B)) ∧ ((¬B) ∧ (¬W))) ∧ (B ∨ ((¬W) ∨ (¬B))))"
+    ],
+    "conclusion": "(((¬B) ∧ (¬B)) ∨ W)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((E ∧ (¬E)) ∧ (O ∧ E)) ∨ ((E ∨ (¬O)) ∨ (O ∨ E)))",
+      "((¬E) ∧ (E ∧ O))",
+      "(((E ∧ (¬E)) ∨ ((¬O) ∧ E)) ∨ (¬O))"
+    ],
+    "conclusion": "(((E ∧ (¬E)) ∨ ((¬O) ∧ E)) ∨ (¬O))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((F ∧ ((¬P) ∨ (¬F))) ∧ ((¬P) ∨ (F ∨ F)))",
+      "(F ∨ (¬P))"
+    ],
+    "conclusion": "((¬P) ∨ (F ∨ F))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((A ∧ (¬J)) ∧ (J ∨ A)) ∧ (((¬A) ∧ (¬J)) ∨ ((¬J) ∨ J)))",
+      "((¬A) ∨ (((¬A) ∨ A) ∧ (¬J)))"
+    ],
+    "conclusion": "(((¬A) ∧ (¬J)) ∨ ((¬J) ∨ J))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((¬X) ∧ ((X ∧ (¬X)) ∧ (N ∧ X)))",
+      "X"
+    ],
+    "conclusion": "X",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(K ∧ (((¬D) ∧ (¬D)) ∧ (K ∧ K)))",
+      "((¬D) ∧ (((¬K) ∧ (¬K)) ∧ ((¬D) ∧ K)))"
+    ],
+    "conclusion": "(((¬D) ∧ (¬D)) ∧ (K ∧ K))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(K ∧ (¬Q))",
+      "((¬K) ∧ ((K ∧ Q) ∧ ((¬K) ∧ (¬Q))))"
+    ],
+    "conclusion": "((K ∧ Q) ∧ ((¬K) ∧ (¬Q)))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(((Q ∧ (¬R)) ∧ ((¬R) ∧ (¬Q))) ∧ ((Q ∧ R) ∧ (Q ∧ Q)))",
+      "Q"
+    ],
+    "conclusion": "Q",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((A ∧ (Y ∧ (¬A))) ∧ (((¬Y) ∧ (¬Y)) ∧ (A ∧ (¬A))))",
+      "(¬A)"
+    ],
+    "conclusion": "(¬A)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(¬F)",
+      "((((¬F) ∧ F) ∧ (F ∧ F)) ∧ (¬Z))"
+    ],
+    "conclusion": "(¬Z)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(L ∧ A)",
+      "((((¬L) ∧ A) ∧ L) ∧ ((A ∧ (¬L)) ∧ (L ∧ A)))"
+    ],
+    "conclusion": "(L ∧ A)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "((((¬C) ∧ I) ∧ (C ∧ C)) ∧ ((I ∧ I) ∧ ((¬C) ∧ C)))",
+      "(((I ∧ (¬C)) ∧ (¬C)) ∧ ((C ∧ C) ∧ ((¬I) ∧ I)))"
+    ],
+    "conclusion": "((I ∧ I) ∧ ((¬C) ∧ C))",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "(¬C)",
+      "((((¬C) ∧ (¬C)) ∧ ((¬R) ∧ (¬C))) ∧ ((R ∧ C) ∧ ((¬C) ∧ R)))",
+      "((((¬C) ∧ (¬R)) ∧ ((¬R) ∧ C)) ∧ ((C ∧ C) ∧ ((¬C) ∧ R)))"
+    ],
+    "conclusion": "(¬C)",
+    "applied_rules": [
+      "simplification"
+    ]
+  },
+  {
+    "premises": [
+      "S",
+      "(((S ∧ C) ∧ (C ∧ C)) ∧ ((S ∧ C) ∧ (C ∧ (¬S))))",
+      "((¬S) ∧ ((S ∧ C) ∧ S))"
+    ],
+    "conclusion": "((S ∧ C) ∧ S)",
+    "applied_rules": [
+      "simplification"
+    ]
+  }
+]
