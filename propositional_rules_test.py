@@ -69,12 +69,12 @@ def test_ds():
 def test_a():
     A = Variable("A")
     B = Variable("B")
-    C = Variable("C")
 
     # Test cases for apply_addition
     premise1 = A
     premise2 = BinaryOp(A, Connective.OR, B)
     result = apply_addition(premise1, premise2)
+    print(result)
     assert result == premise2, "Test case 1 for apply_addition failed"
 
     premise1 = B
@@ -92,6 +92,7 @@ def test_s():
     premise1 = BinaryOp(A, Connective.AND, B)
     premise2 = A
     result = apply_simplification(premise1, premise2)
+    print(result)
     assert result == B, "Test case 1 for apply_simplification failed"
 
     premise1 = BinaryOp(A, Connective.AND, B)
@@ -118,8 +119,8 @@ def main():
     #test_mt()
     #test_hs()
     #test_ds()
-    test_a()
-    #test_s()
+    #test_a()
+    test_s()
     #test_r()
 
 

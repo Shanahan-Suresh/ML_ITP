@@ -159,7 +159,17 @@ def dfs_search_test():
     print("Applied rules:", applied_rules)
     print("Resulting expressions:", resulting_exprs)
 
-    
+    # 2 Identity Mul
+    expr1 = BinaryOp(BinaryOp(A, Connective.MUL, Number(1)), Connective.MUL, Number(1))
+    conclusion = A
+
+    # Run the DFS search
+    applied_rules, resulting_exprs = dfs_search_inference_rules({expr1}, conclusion)
+
+    # Check the result
+    print("Applied rules:", applied_rules)
+    print("Resulting expressions:", resulting_exprs)
+
 
 
 
