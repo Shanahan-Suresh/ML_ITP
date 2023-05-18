@@ -1,4 +1,5 @@
 from inference_rules import *
+from formal_logic import*
 
 #Modus Ponens Test
 def test_mp():

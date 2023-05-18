@@ -152,8 +152,8 @@ def main():
     #test_CA()
     #test_CM()
     #test_D()
-    #test_ID()
-    #test_IM()
+    test_ID()
+    test_IM()
     #test_IvA()
     test_IvM()
 
