@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
 
 def custom_tokenizer(s):
     return re.findall(r'\w+|[^\w\s]', s)
@@ -64,6 +65,12 @@ y_pred = best_rf.predict(X_test)
 # Calculate the accuracy
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Random Forest model accuracy: {accuracy:.2f}")
+
+# Make predictions
+y_pred = best_rf.predict(X_test)
+
+# Generate classification report
+print("Classification Report for Random Forest:\n", classification_report(y_test, y_pred, zero_division=0))
 
 # Save the best model to a file
 joblib.dump(best_rf, "best_random_forest_model.pkl")

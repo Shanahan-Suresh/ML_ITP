@@ -7,6 +7,7 @@ import os
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 
 def custom_tokenizer(s):
@@ -141,6 +142,16 @@ plt.ylabel('Loss')
 plt.legend()
 plt.show()
 
+# Get the ground truth labels
+true_labels = mlb.inverse_transform(y_test)
+# Get the predicted labels
+pred_labels = mlb.inverse_transform(predicted.numpy())
+
+# Compute the classification report
+report = classification_report(y_test, predicted.numpy(), target_names=unique_rules)
+
+print("\nClassification Report:")
+print(report)
 
 # Save the model
 torch.save(model.state_dict(), "cnn_model.pth")

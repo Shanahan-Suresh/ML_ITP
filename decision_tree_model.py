@@ -2,10 +2,12 @@ import json
 import os
 import re
 import pickle
+import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
 
 def custom_tokenizer(s):
     return re.findall(r'\w+|[^\w\s]', s)
@@ -46,6 +48,11 @@ print(f"Best accuracy: {grid_search.best_score_}")
 # Train the best model on the full dataset
 best_decision_tree.fit(X[:len(premises)], inference_rules)
 
+# Make predictions
+y_pred = best_decision_tree.predict(X_test)
+
+# Generate classification report
+print("Classification Report for Decision Tree:\n", classification_report(y_test, y_pred, zero_division=0))
+
 with open("best_decision_tree.pkl", "wb") as f:
     pickle.dump(best_decision_tree, f)
-

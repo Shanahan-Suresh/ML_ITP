@@ -61,6 +61,10 @@ for k in range(1, 21):  # Test K values from 1 to 10
     accuracy = accuracy_score(y_test, y_pred)
     print(f"Accuracy for K={k}: {accuracy}")
 
+    # Inside the loop for each K value
+    y_pred = knn.predict(X_test)
+    print(f"Classification report for K={k}:\n{classification_report(y_test, y_pred, zero_division=0)}")
+
     if accuracy > best_accuracy:
         best_accuracy = accuracy
         best_k = k
@@ -70,3 +74,4 @@ print(f"Best K: {best_k}, Best Accuracy: {best_accuracy}")
 
 # Save the best KNN model weights
 joblib.dump(best_knn_model, "best_knn_model.pkl")
+
